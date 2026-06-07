@@ -1,0 +1,1853 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>DPE Case Study — Arwa Mohamed</title>
+
+  <meta
+    name="description"
+    content="Étude de cas DPE — Data Quality, EDA, BI, OLAP & livrables."
+  >
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
+
+
+  <link
+    rel="stylesheet"
+    href="assets/css/style.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="assets/css/case-study.css"
+  >
+
+  <style>
+    .case-meta {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 14px;
+      align-items: stretch;
+    }
+
+    .case-meta-left,
+    .case-meta-right {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .case-meta-left .btn {
+      width: 100%;
+      justify-content: center;
+    }
+
+    @media (max-width: 700px) {
+      .case-meta {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+</head>
+
+
+<body>
+
+
+<div class="bg">
+
+  <div
+    class="stars"
+    aria-hidden="true"
+  ></div>
+
+  <div
+    class="glow"
+    aria-hidden="true"
+  ></div>
+
+</div>
+
+
+
+<header class="nav">
+
+
+  <a
+    class="brand"
+    href="index.html#projects"
+    aria-label="Retour au portfolio"
+  >
+
+    <span class="brand-dot"></span>
+
+    <span class="brand-text">
+      Arwa Mohamed
+    </span>
+
+  </a>
+
+
+
+  <nav class="nav-links">
+
+    <a
+      href="index.html#projects"
+      data-i18n="nav.back"
+    >
+      ← Retour
+    </a>
+
+    <a
+      href="#contact"
+      class="btn small"
+      data-i18n="nav.contact"
+    >
+      Contact
+    </a>
+
+  </nav>
+
+
+
+  <div
+    class="lang-switch"
+    aria-label="Language switcher"
+  >
+
+    <button
+      id="langBtn"
+      class="lang-btn"
+      type="button"
+    >
+
+      <span
+        class="lang-flag"
+        id="langFlag"
+        aria-hidden="true"
+      >
+        🇫🇷
+      </span>
+
+      <span
+        class="lang-code"
+        id="langCode"
+      >
+        FR
+      </span>
+
+    </button>
+
+  </div>
+
+
+
+  <div
+    class="theme-switch"
+    aria-label="Theme switcher"
+  >
+
+    <button
+      id="themeBtn"
+      class="theme-btn"
+      type="button"
+    >
+
+      <span
+        class="theme-ico"
+        id="themeIco"
+        aria-hidden="true"
+      >
+        🌙
+      </span>
+
+      <span
+        class="theme-code"
+        id="themeCode"
+      >
+        DARK
+      </span>
+
+    </button>
+
+  </div>
+
+
+</header>
+
+
+
+<main class="case">
+
+
+<!-- HERO -->
+
+<section
+  class="case-hero reveal"
+  id="overview"
+>
+
+  <div class="case-hero-media">
+
+    <img
+      src="assets/img/dpe.png"
+      alt="DPE case study cover"
+    >
+
+    <div class="case-hero-overlay"></div>
+
+  </div>
+
+
+
+  <div class="case-hero-content">
+
+
+    <div class="chip">
+
+      <i class="fa-solid fa-chart-column"></i>
+
+      <span data-i18n="hero.chip">
+        Data Quality • EDA • BI • OLAP
+      </span>
+
+    </div>
+
+
+
+    <h1 data-i18n="hero.title">
+      Energy Performance Analytics
+      <br>
+      <span class="gradient">
+        DPE (France)
+      </span>
+    </h1>
+
+
+
+    <p
+      class="subtitle"
+      data-i18n="hero.subtitle"
+    >
+      Transformer une base open-data complexe
+      en un dataset fiable + analyses décisionnelles
+      (qualité, préparation, insights & livrables).
+    </p>
+
+
+
+    <div class="case-meta">
+
+      <div class="case-meta-left">
+        <div class="badge">
+          <i class="fa-solid fa-database"></i>
+          <span data-i18n="meta.size">
+            ~759k lignes
+          </span>
+        </div>
+
+        <a class="btn" href="#deliverables">
+          <i class="fa-solid fa-file-lines"></i>
+          <span data-i18n="meta.deliverables">
+            Voir les livrables
+          </span>
+        </a>
+      </div>
+
+      <div class="case-meta-right">
+        <div class="badge">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span data-i18n="meta.context">
+            Projet académique (Université)
+          </span>
+        </div>
+
+        <div class="badge">
+          <i class="fa-solid fa-chart-line"></i>
+          <span data-i18n="meta.focus">
+            Fiabilité + analyses décisionnelles
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <p
+      class="tiny muted"
+      data-i18n="hero.note"
+    >
+      Note : dataset public (open-data).
+      Résultats orientés fiabilité & restitution.
+    </p>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- OVERVIEW -->
+
+<section
+  class="section"
+  id="content"
+>
+
+  <div class="section-head reveal">
+
+    <h2 data-i18n="overview.title">
+      Vue d’ensemble
+    </h2>
+
+    <p
+      class="muted"
+      data-i18n="overview.desc"
+    >
+      Objectif : fiabiliser la donnée DPE
+      (cohérence, manquants, outliers)
+      et produire des analyses exploitables.
+    </p>
+
+  </div>
+
+
+
+  <div class="grid-2">
+
+
+    <div class="card reveal">
+
+      <h3 data-i18n="overview.block1t">
+        Ce que j’ai fait
+      </h3>
+
+      <ul class="list">
+
+        <li>
+          <i class="fa-solid fa-shield-heart"></i>
+          <span data-i18n="overview.b1">
+            Quality checks : règles, anomalies,
+            doublons, manquants
+          </span>
+        </li>
+
+        <li>
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <span data-i18n="overview.b2">
+            Préparation : imputation, encoding,
+            scaling, feature selection
+          </span>
+        </li>
+
+        <li>
+          <i class="fa-solid fa-magnifying-glass-chart"></i>
+          <span data-i18n="overview.b3">
+            EDA : segmentation
+            (type bâtiment, zone, isolation)
+          </span>
+        </li>
+
+        <li>
+          <i class="fa-solid fa-chart-pie"></i>
+          <span data-i18n="overview.b4">
+            Restitution : rapports + slides
+            (format portfolio)
+          </span>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+
+    <div class="card reveal">
+
+      <h3 data-i18n="overview.block2t">
+        Stack
+      </h3>
+
+      <div class="chips">
+        <span>Python</span>
+        <span>SQL</span>
+        <span>Data Cleaning</span>
+        <span>Validation</span>
+        <span>Power BI</span>
+        <span>OLAP</span>
+      </div>
+
+
+      <div class="quote">
+
+        <i class="fa-solid fa-quote-left"></i>
+
+        <p data-i18n="overview.quote">
+          Good analytics starts with reliable data.
+        </p>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- APPROACH -->
+
+<section
+  class="section"
+  id="approach"
+>
+
+  <div class="section-head reveal">
+
+    <h2 data-i18n="steps.title">
+      Approche
+    </h2>
+
+    <p
+      class="muted"
+      data-i18n="steps.desc"
+    >
+      Une démarche en 4 phases :
+      audit qualité → préparation →
+      analyses → restitution.
+    </p>
+
+  </div>
+
+
+
+  <div class="timeline">
+
+
+    <div class="t-item reveal">
+
+      <div class="t-dot"></div>
+
+      <div class="t-card">
+
+        <div class="t-top">
+
+          <h3 data-i18n="steps.s1.title">
+            1) Audit Data Quality
+          </h3>
+
+          <span
+            class="pill"
+            data-i18n="steps.s1.pill"
+          >
+            Profiling
+          </span>
+
+        </div>
+
+
+        <ul class="list">
+
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <span data-i18n="steps.s1.li1">
+              Manquants, doublons,
+              incohérences, valeurs extrêmes
+            </span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <span data-i18n="steps.s1.li2">
+              Règles de cohérence
+              (surfaces, étiquettes, énergie)
+            </span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <span data-i18n="steps.s1.li3">
+              Harmonisation & nettoyage
+            </span>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="t-item reveal">
+
+      <div class="t-dot"></div>
+
+      <div class="t-card">
+
+        <div class="t-top">
+
+          <h3 data-i18n="steps.s2.title">
+            2) Pipeline de préparation
+          </h3>
+
+          <span
+            class="pill"
+            data-i18n="steps.s2.pill"
+          >
+            Preprocessing
+          </span>
+
+        </div>
+
+
+        <ul class="list">
+
+          <li>
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <span data-i18n="steps.s2.li1">
+              Imputation (KNN / MICE selon les besoins)
+            </span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <span data-i18n="steps.s2.li2">
+              Scaling / normalisation
+              (robust, power transform…)
+            </span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <span data-i18n="steps.s2.li3">
+              Encoding (ordinal + one-hot)
+              + sélection de variables
+            </span>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="t-item reveal">
+
+      <div class="t-dot"></div>
+
+      <div class="t-card">
+
+        <div class="t-top">
+
+          <h3 data-i18n="steps.s3.title">
+            3) Analyses & insights
+          </h3>
+
+          <span
+            class="pill"
+            data-i18n="steps.s3.pill"
+          >
+            Insights / BI
+          </span>
+
+        </div>
+
+
+        <ul class="list">
+
+          <li>
+            <i class="fa-solid fa-chart-line"></i>
+            <span data-i18n="steps.s3.li1">
+              EDA : patterns par zone,
+              type de bâtiment, isolation
+            </span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-chart-line"></i>
+            <span data-i18n="steps.s3.li2">
+              Comparaison des performances
+              énergétiques
+            </span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-chart-line"></i>
+            <span data-i18n="steps.s3.li3">
+              Identification des tendances
+              et leviers d'amélioration
+            </span>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="t-item reveal">
+
+      <div class="t-dot"></div>
+
+      <div class="t-card">
+
+        <div class="t-top">
+
+          <h3 data-i18n="steps.s4.title">
+            4) Restitution & livrables
+          </h3>
+
+          <span
+            class="pill"
+            data-i18n="steps.s4.pill"
+          >
+            Reporting
+          </span>
+
+        </div>
+
+
+        <ul class="list">
+
+          <li>
+            <i class="fa-solid fa-file-lines"></i>
+            <span data-i18n="steps.s4.li1">
+              Rapports documentant chaque phase
+            </span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-presentation-screen"></i>
+            <span data-i18n="steps.s4.li2">
+              Présentation synthétique du projet
+            </span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-chart-pie"></i>
+            <span data-i18n="steps.s4.li3">
+              Graphiques et résultats prêts
+              pour la restitution
+            </span>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- RESULTS -->
+
+<section
+  class="section"
+  id="results"
+>
+
+  <div class="section-head reveal">
+
+    <h2 data-i18n="results.title">
+      Résultats
+    </h2>
+
+    <p
+      class="muted"
+      data-i18n="results.desc"
+    >
+      Quelques insights types + ce que le projet
+      démontre en compétences data.
+    </p>
+
+  </div>
+
+
+
+  <div class="grid-2">
+
+
+    <div class="card reveal">
+
+      <h3 data-i18n="results.insightsT">
+        Insights
+      </h3>
+
+      <ul class="list">
+
+        <li>
+          <i class="fa-solid fa-sparkles"></i>
+          <span data-i18n="results.i1">
+            Comparaison consommation selon
+            type de bâtiment
+          </span>
+        </li>
+
+        <li>
+          <i class="fa-solid fa-sparkles"></i>
+          <span data-i18n="results.i2">
+            Impact zone climatique / isolation
+            sur la performance
+          </span>
+        </li>
+
+        <li>
+          <i class="fa-solid fa-sparkles"></i>
+          <span data-i18n="results.i3">
+            Priorisation des leviers
+            (chauffage, ventilation…)
+          </span>
+        </li>
+
+      </ul>
+
+      <p
+        class="note muted"
+        data-i18n="results.note"
+      >
+        Analyse orientée décision et restitution.
+      </p>
+
+    </div>
+
+
+
+    <div class="card reveal">
+
+      <h3 data-i18n="results.skillsT">
+        Compétences démontrées
+      </h3>
+
+      <div class="chips">
+        <span>Data Cleaning</span>
+        <span>Quality Rules</span>
+        <span>Imputation</span>
+        <span>EDA</span>
+        <span>SQL</span>
+        <span>BI</span>
+        <span>Documentation</span>
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- DOCUMENTS -->
+
+<section class="section" id="deliverables">
+
+  <div class="section-head reveal">
+    <h2 data-i18n="deliv.title">Documents du projet</h2>
+    <p class="muted" data-i18n="deliv.desc">Les trois documents finaux du projet.</p>
+  </div>
+
+  <div class="grid-2">
+
+    <div class="card reveal">
+      <div class="chip">
+        <i class="fa-solid fa-file-pdf"></i>
+        <span data-i18n="deliv.report.label">Rapport</span>
+      </div>
+      <h3 data-i18n="deliv.report.title">Rapport final</h3>
+      <a class="btn" href="assets/docs/rapport-final.pdf" target="_blank" rel="noopener">
+        <i class="fa-solid fa-file-pdf"></i>
+        <span data-i18n="deliv.open">Ouvrir le document</span>
+      </a>
+    </div>
+
+    <div class="card reveal">
+      <div class="chip">
+        <i class="fa-solid fa-file-pdf"></i>
+        <span data-i18n="deliv.reportEn.label">Rapport</span>
+      </div>
+      <h3 data-i18n="deliv.reportEn.title">Rapport final — English</h3>
+      <a class="btn" href="assets/docs/rapport-final-anglais.pdf" target="_blank" rel="noopener">
+        <i class="fa-solid fa-file-pdf"></i>
+        <span data-i18n="deliv.open">Ouvrir le document</span>
+      </a>
+    </div>
+
+    <div class="card reveal">
+      <div class="chip">
+        <i class="fa-solid fa-display"></i>
+        <span data-i18n="deliv.presentation.label">Présentation</span>
+      </div>
+      <h3 data-i18n="deliv.presentation.title">Présentation finale</h3>
+      <a class="btn" href="assets/docs/presentation-finale.pdf" target="_blank" rel="noopener">
+        <i class="fa-solid fa-file-pdf"></i>
+        <span data-i18n="deliv.presentation.open">Ouvrir la présentation</span>
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- VISUALS -->
+
+<section
+  class="section"
+  id="charts"
+>
+
+  <div class="section-head reveal">
+
+    <h2 data-i18n="charts.title">
+      Visuels clés
+    </h2>
+
+    <p
+      class="muted"
+      data-i18n="charts.sub"
+    >
+      Une sélection de graphiques illustrant
+      les principaux patterns observés.
+    </p>
+
+  </div>
+
+
+
+  <div class="zigzag">
+
+
+    <article class="zig-card reveal">
+
+      <div class="zig-media">
+
+        <img
+          src="assets/img/graph1.png"
+          alt="DPE chart 1"
+        >
+
+      </div>
+
+
+      <div class="zig-body">
+
+        <h3 data-i18n="charts.c1.title">
+          Distribution de consommation
+        </h3>
+
+        <p
+          class="muted"
+          data-i18n="charts.c1.desc"
+        >
+          Montre l’asymétrie et pourquoi
+          des transformations et du robust scaling
+          étaient utiles.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <article class="zig-card reveal">
+
+      <div class="zig-media">
+
+        <img
+          src="assets/img/graph2.png"
+          alt="DPE chart 2"
+        >
+
+      </div>
+
+
+      <div class="zig-body">
+
+        <h3 data-i18n="charts.c2.title">
+          Comparaison par type de bâtiment
+        </h3>
+
+        <p
+          class="muted"
+          data-i18n="charts.c2.desc"
+        >
+          Met en évidence les différences
+          entre maisons et appartements
+          et l’effet de l’isolation.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <article class="zig-card reveal">
+
+      <div class="zig-media">
+
+        <img
+          src="assets/img/graph3.png"
+          alt="DPE chart 3"
+        >
+
+      </div>
+
+
+      <div class="zig-body">
+
+        <h3 data-i18n="charts.c3.title">
+          Effet des zones climatiques
+        </h3>
+
+        <p
+          class="muted"
+          data-i18n="charts.c3.desc"
+        >
+          Démontre comment les zones climatiques
+          déplacent la consommation et les étiquettes
+          énergétiques.
+        </p>
+
+      </div>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section
+  id="contact"
+  class="section"
+>
+
+  <div class="contact card reveal">
+
+    <h3 data-i18n="contact.title">
+      Envie d’en discuter ?
+    </h3>
+
+    <p
+      class="muted"
+      data-i18n="contact.desc"
+    >
+      Je peux détailler la démarche,
+      les tests et les choix techniques.
+    </p>
+
+
+    <div class="hero-cta">
+
+      <a
+        class="btn"
+        href="mailto:etu.arwa@gmail.com"
+      >
+
+        <i class="fa-solid fa-envelope"></i>
+
+        <span data-i18n="contact.mail">
+          Me contacter
+        </span>
+
+      </a>
+
+
+      <a
+        class="btn ghost"
+        href="index.html#projects"
+      >
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+        <span data-i18n="contact.back">
+          Retour aux projets
+        </span>
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+
+  <div
+    class="tiny muted"
+    style="padding: 0 18px 40px;"
+  >
+
+    © <span id="year"></span>
+    Arwa Mohamed —
+
+    <span data-i18n="footer">
+      Built with love & data ✨
+    </span>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+
+<script>
+
+/* ===============================
+   REVEAL
+================================ */
+
+const observer =
+  new IntersectionObserver(
+    (entries) => {
+
+      entries.forEach((entry) => {
+
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in");
+        }
+
+      });
+
+    },
+    {
+      threshold: 0.12
+    }
+  );
+
+
+document
+  .querySelectorAll(".reveal")
+  .forEach((element) => {
+    observer.observe(element);
+  });
+
+
+
+/* ===============================
+   YEAR
+================================ */
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+
+
+/* ===============================
+   GLOBAL SETTINGS
+================================ */
+
+const LS_THEME = "site_theme";
+const LS_LANG = "site_lang";
+
+
+
+/* ===============================
+   THEME
+================================ */
+
+function syncThemeUI(theme) {
+
+  const ico =
+    document.getElementById("themeIco");
+
+  const code =
+    document.getElementById("themeCode");
+
+
+  if (ico) {
+
+    ico.textContent =
+      theme === "light"
+        ? "☀️"
+        : "🌙";
+
+  }
+
+
+  if (code) {
+
+    code.textContent =
+      theme === "light"
+        ? "LIGHT"
+        : "DARK";
+
+  }
+
+}
+
+
+function applyTheme(theme) {
+
+  if (theme !== "dark" && theme !== "light") {
+    theme = "dark";
+  }
+
+
+  document.documentElement.setAttribute(
+    "data-theme",
+    theme
+  );
+
+
+  localStorage.setItem(
+    LS_THEME,
+    theme
+  );
+
+
+  syncThemeUI(theme);
+
+}
+
+
+const savedTheme =
+  localStorage.getItem(LS_THEME) || "dark";
+
+applyTheme(savedTheme);
+
+
+const themeBtn =
+  document.getElementById("themeBtn");
+
+
+if (themeBtn) {
+
+  themeBtn.addEventListener(
+    "click",
+    () => {
+
+      const current =
+        localStorage.getItem(LS_THEME) || "dark";
+
+      applyTheme(
+        current === "dark"
+          ? "light"
+          : "dark"
+      );
+
+    }
+  );
+
+}
+
+
+
+/* ===============================
+   TRANSLATIONS
+================================ */
+
+const dict = {
+
+  fr: {
+
+    "nav.back": "← Retour",
+    "nav.contact": "Contact",
+
+    "hero.chip":
+      "Data Quality • EDA • BI • OLAP",
+
+    "hero.title":
+      "Energy Performance Analytics<br><span class='gradient'>DPE (France)</span>",
+
+    "hero.subtitle":
+      "Transformer une base open-data complexe en un dataset fiable + analyses décisionnelles (qualité, préparation, insights & livrables).",
+
+    "meta.context":
+      "Projet académique (Université)",
+
+    "meta.size":
+      "~759k lignes",
+
+    "meta.focus":
+      "Fiabilité + analyses décisionnelles",
+
+    "meta.deliverables":
+      "Voir les livrables",
+
+    "hero.note":
+      "Note : dataset public (open-data). Résultats orientés fiabilité & restitution.",
+
+
+    "overview.title":
+      "Vue d’ensemble",
+
+    "overview.desc":
+      "Objectif : fiabiliser la donnée DPE (cohérence, manquants, outliers) et produire des analyses exploitables.",
+
+    "overview.block1t":
+      "Ce que j’ai fait",
+
+    "overview.b1":
+      "Quality checks : règles, anomalies, doublons, manquants",
+
+    "overview.b2":
+      "Préparation : imputation, encoding, scaling, feature selection",
+
+    "overview.b3":
+      "EDA : segmentation (type bâtiment, zone, isolation)",
+
+    "overview.b4":
+      "Restitution : rapports + slides (format portfolio)",
+
+    "overview.block2t":
+      "Stack",
+
+    "overview.quote":
+      "Good analytics starts with reliable data.",
+
+
+    "steps.title":
+      "Approche",
+
+    "steps.desc":
+      "Une démarche en 4 phases : audit qualité → préparation → analyses → restitution.",
+
+    "steps.s1.title":
+      "1) Audit Data Quality",
+
+    "steps.s1.pill":
+      "Profiling",
+
+    "steps.s1.li1":
+      "Manquants, doublons, incohérences, valeurs extrêmes",
+
+    "steps.s1.li2":
+      "Règles de cohérence (surfaces, étiquettes, énergie)",
+
+    "steps.s1.li3":
+      "Harmonisation & nettoyage",
+
+
+    "steps.s2.title":
+      "2) Pipeline de préparation",
+
+    "steps.s2.pill":
+      "Preprocessing",
+
+    "steps.s2.li1":
+      "Imputation (KNN / MICE selon les besoins)",
+
+    "steps.s2.li2":
+      "Scaling / normalisation (robust, power transform…)",
+
+    "steps.s2.li3":
+      "Encoding (ordinal + one-hot) + sélection de variables",
+
+
+    "steps.s3.title":
+      "3) Analyses & insights",
+
+    "steps.s3.pill":
+      "Insights / BI",
+
+    "steps.s3.li1":
+      "EDA : patterns par zone, type de bâtiment, isolation",
+
+    "steps.s3.li2":
+      "Comparaison des performances énergétiques",
+
+    "steps.s3.li3":
+      "Identification des tendances et leviers d'amélioration",
+
+
+    "steps.s4.title":
+      "4) Restitution & livrables",
+
+    "steps.s4.pill":
+      "Reporting",
+
+    "steps.s4.li1":
+      "Rapports documentant chaque phase",
+
+    "steps.s4.li2":
+      "Présentation synthétique du projet",
+
+    "steps.s4.li3":
+      "Graphiques et résultats prêts pour la restitution",
+
+
+    "results.title":
+      "Résultats",
+
+    "results.desc":
+      "Quelques insights types + ce que le projet démontre en compétences data.",
+
+    "results.insightsT":
+      "Insights",
+
+    "results.i1":
+      "Comparaison consommation selon type de bâtiment",
+
+    "results.i2":
+      "Impact zone climatique / isolation sur la performance",
+
+    "results.i3":
+      "Priorisation des leviers (chauffage, ventilation…)",
+
+    "results.note":
+      "Analyse orientée décision et restitution.",
+
+    "results.skillsT":
+      "Compétences démontrées",
+
+
+    "deliv.title":
+      "Documents du projet",
+
+    "deliv.desc":
+      "Les trois documents finaux du projet.",
+
+    "deliv.phase1.label":
+      "Phase 1",
+
+    "deliv.phase1.title":
+      "Étude et exploration des données",
+
+    "deliv.phase1.desc":
+      "Contexte, structure du dataset, exploration initiale et premiers constats sur la qualité des données.",
+
+    "deliv.phase2.label":
+      "Phase 2",
+
+    "deliv.phase2.title":
+      "Préparation et nettoyage",
+
+    "deliv.phase2.desc":
+      "Nettoyage, gestion des valeurs manquantes, encodage, transformation et préparation du dataset.",
+
+    "deliv.phase3.label":
+      "Phase 3",
+
+    "deliv.phase3.title":
+      "Analyse et modélisation",
+
+    "deliv.phase3.desc":
+      "Analyses exploratoires, visualisations, comparaison des variables et identification des principaux patterns.",
+
+    "deliv.phase4.label":
+      "Phase 4",
+
+    "deliv.phase4.title":
+      "Besoins, insights et restitution",
+
+    "deliv.phase4.desc":
+      "Synthèse des résultats, besoins métiers, visualisations finales et restitution orientée décision.",
+
+    "deliv.presentation.label":
+      "Présentation",
+
+    "deliv.presentation.title":
+      "Présentation finale",
+
+    "deliv.presentation.desc":
+      "Support de présentation regroupant les principaux résultats du projet.",
+
+    "deliv.open":
+      "Ouvrir le document",
+
+    "deliv.presentation.open":
+      "Ouvrir la présentation",
+
+
+    "charts.title":
+      "Visuels clés",
+
+    "charts.sub":
+      "Une sélection de graphiques illustrant les principaux patterns observés.",
+
+    "charts.c1.title":
+      "Distribution de consommation",
+
+    "charts.c1.desc":
+      "Montre l’asymétrie et pourquoi des transformations et du robust scaling étaient utiles.",
+
+    "charts.c2.title":
+      "Comparaison par type de bâtiment",
+
+    "charts.c2.desc":
+      "Met en évidence les différences entre maisons et appartements et l’effet de l’isolation.",
+
+    "charts.c3.title":
+      "Effet des zones climatiques",
+
+    "charts.c3.desc":
+      "Démontre comment les zones climatiques déplacent la consommation et les étiquettes énergétiques.",
+
+
+    "contact.title":
+      "Envie d’en discuter ?",
+
+    "contact.desc":
+      "Je peux détailler la démarche, les tests et les choix techniques.",
+
+    "contact.mail":
+      "Me contacter",
+
+    "contact.back":
+      "Retour aux projets",
+
+    "footer":
+      "Built with love & data ✨"
+
+  },
+
+
+  en: {
+
+    "nav.back":
+      "← Back",
+
+    "nav.contact":
+      "Contact",
+
+
+    "hero.chip":
+      "Data Quality • EDA • BI • OLAP",
+
+    "hero.title":
+      "Energy Performance Analytics<br><span class='gradient'>DPE (France)</span>",
+
+    "hero.subtitle":
+      "Turn a complex open-data dataset into reliable data and decision-ready analyses covering data quality, preparation, insights and deliverables.",
+
+    "meta.context":
+      "Academic project (University)",
+
+    "meta.size":
+      "~759k records",
+
+    "meta.focus":
+      "Reliability + decision insights",
+
+    "meta.deliverables":
+      "View deliverables",
+
+    "hero.note":
+      "Note: public open-data dataset. Focus on reliability and clear reporting.",
+
+
+    "overview.title":
+      "Overview",
+
+    "overview.desc":
+      "Goal: make DPE data reliable through consistency checks, missing-value handling and outlier detection, then produce actionable analyses.",
+
+    "overview.block1t":
+      "What I did",
+
+    "overview.b1":
+      "Quality checks: rules, anomalies, duplicates and missing values",
+
+    "overview.b2":
+      "Preparation: imputation, encoding, scaling and feature selection",
+
+    "overview.b3":
+      "EDA: segmentation by building type, climate zone and insulation",
+
+    "overview.b4":
+      "Reporting: clean reports and portfolio-ready slides",
+
+    "overview.block2t":
+      "Stack",
+
+    "overview.quote":
+      "Good analytics starts with reliable data.",
+
+
+    "steps.title":
+      "Approach",
+
+    "steps.desc":
+      "A four-phase workflow: quality audit → preparation → analysis → reporting.",
+
+
+    "steps.s1.title":
+      "1) Data Quality audit",
+
+    "steps.s1.pill":
+      "Profiling",
+
+    "steps.s1.li1":
+      "Missing values, duplicates, inconsistencies and outliers",
+
+    "steps.s1.li2":
+      "Consistency rules for surfaces, labels and energy metrics",
+
+    "steps.s1.li3":
+      "Harmonization and cleaning",
+
+
+    "steps.s2.title":
+      "2) Preparation pipeline",
+
+    "steps.s2.pill":
+      "Preprocessing",
+
+    "steps.s2.li1":
+      "Imputation using KNN / MICE depending on the need",
+
+    "steps.s2.li2":
+      "Scaling / normalization using robust and power transforms",
+
+    "steps.s2.li3":
+      "Ordinal and one-hot encoding + feature selection",
+
+
+    "steps.s3.title":
+      "3) Analysis & insights",
+
+    "steps.s3.pill":
+      "Insights / BI",
+
+    "steps.s3.li1":
+      "EDA: patterns by zone, building type and insulation",
+
+    "steps.s3.li2":
+      "Comparison of energy performance",
+
+    "steps.s3.li3":
+      "Identification of trends and improvement levers",
+
+
+    "steps.s4.title":
+      "4) Reporting & deliverables",
+
+    "steps.s4.pill":
+      "Reporting",
+
+    "steps.s4.li1":
+      "Reports documenting each project phase",
+
+    "steps.s4.li2":
+      "Concise project presentation",
+
+    "steps.s4.li3":
+      "Charts and results ready for presentation",
+
+
+    "results.title":
+      "Results",
+
+    "results.desc":
+      "Example insights and the data skills demonstrated by the project.",
+
+    "results.insightsT":
+      "Insights",
+
+    "results.i1":
+      "Consumption comparison by building type",
+
+    "results.i2":
+      "Impact of climate zone and insulation on performance",
+
+    "results.i3":
+      "Prioritization of improvement levers such as heating and ventilation",
+
+    "results.note":
+      "Decision-oriented analysis and reporting.",
+
+    "results.skillsT":
+      "Skills demonstrated",
+
+
+    "deliv.title":
+      "Project documents",
+
+    "deliv.desc":
+      "Access the three final deliverables of the DPE project.",
+
+    "deliv.report.label":
+      "Report",
+
+    "deliv.report.title":
+      "Final report",
+
+    "deliv.report.desc":
+      "Final project report presenting the methodology, analyses and results.",
+
+    "deliv.reportEn.label":
+      "Report",
+
+    "deliv.reportEn.title":
+      "Final report — English",
+
+    "deliv.reportEn.desc":
+      "English version of the final report presenting the methodology, analyses and results.",
+
+    "deliv.presentation.label":
+      "Presentation",
+
+    "deliv.presentation.title":
+      "Final presentation",
+
+    "deliv.presentation.desc":
+      "Presentation deck summarizing the main project results.",
+
+    "deliv.open":
+      "Open document",
+
+    "deliv.presentation.open":
+      "Open presentation",
+
+
+    "charts.title":
+      "Key visuals",
+
+    "charts.sub":
+      "A selection of charts illustrating the main patterns observed.",
+
+    "charts.c1.title":
+      "Consumption distribution",
+
+    "charts.c1.desc":
+      "Shows the skewness and why transformations and robust scaling were useful.",
+
+    "charts.c2.title":
+      "Comparison by building type",
+
+    "charts.c2.desc":
+      "Highlights differences between houses and apartments and the impact of insulation.",
+
+    "charts.c3.title":
+      "Climate zone effect",
+
+    "charts.c3.desc":
+      "Shows how climate zones affect consumption patterns and energy labels.",
+
+
+    "contact.title":
+      "Want to discuss this project?",
+
+    "contact.desc":
+      "I can walk you through the methodology, tests and technical choices.",
+
+    "contact.mail":
+      "Email me",
+
+    "contact.back":
+      "Back to projects",
+
+    "footer":
+      "Built with love & data ✨"
+
+  }
+
+};
+
+
+
+/* ===============================
+   LANGUAGE UI
+================================ */
+
+function syncLangUI(lang) {
+
+  const flag =
+    document.getElementById("langFlag");
+
+  const code =
+    document.getElementById("langCode");
+
+
+  if (flag) {
+
+    flag.textContent =
+      lang === "fr"
+        ? "🇫🇷"
+        : "🇬🇧";
+
+  }
+
+
+  if (code) {
+
+    code.textContent =
+      lang === "fr"
+        ? "FR"
+        : "EN";
+
+  }
+
+}
+
+
+
+/* ===============================
+   APPLY LANGUAGE
+================================ */
+
+function applyLang(lang) {
+
+  if (!dict[lang]) {
+    lang = "fr";
+  }
+
+
+  document.documentElement.setAttribute(
+    "lang",
+    lang
+  );
+
+
+  localStorage.setItem(
+    LS_LANG,
+    lang
+  );
+
+
+  syncLangUI(lang);
+
+
+  document
+    .querySelectorAll("[data-i18n]")
+    .forEach((element) => {
+
+      const key =
+        element.getAttribute("data-i18n");
+
+      const translation =
+        dict[lang][key];
+
+
+      if (translation == null) {
+        return;
+      }
+
+
+      /*
+       * Certains éléments contiennent
+       * volontairement du HTML.
+       */
+
+      if (
+        key === "hero.title"
+      ) {
+
+        element.innerHTML =
+          translation;
+
+      } else {
+
+        element.textContent =
+          translation;
+
+      }
+
+    });
+
+
+  document.title =
+    lang === "fr"
+      ? "Étude de cas DPE — Arwa Mohamed"
+      : "DPE Case Study — Arwa Mohamed";
+
+
+  const description =
+    document.querySelector(
+      'meta[name="description"]'
+    );
+
+
+  if (description) {
+
+    description.setAttribute(
+      "content",
+      lang === "fr"
+        ? "Étude de cas DPE — Data Quality, EDA, BI, OLAP & livrables."
+        : "DPE case study — Data Quality, EDA, BI, OLAP & deliverables."
+    );
+
+  }
+
+}
+
+
+
+/* ===============================
+   LANGUAGE BUTTON
+================================ */
+
+const savedLang =
+  localStorage.getItem(LS_LANG) || "fr";
+
+applyLang(savedLang);
+
+
+const langBtn =
+  document.getElementById("langBtn");
+
+
+if (langBtn) {
+
+  langBtn.addEventListener(
+    "click",
+    () => {
+
+      const current =
+        localStorage.getItem(LS_LANG) || "fr";
+
+      applyLang(
+        current === "fr"
+          ? "en"
+          : "fr"
+      );
+
+    }
+  );
+
+}
+
+</script>
+
+
+</body>
+</html>

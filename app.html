@@ -1,0 +1,1117 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>
+    Apps & Impact — Arwa Mohamed
+  </title>
+
+  <meta
+    name="description"
+    content="Apps & Impact — case study (web, parsing/AST, app médicale)."
+  >
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
+
+
+  <link
+    rel="stylesheet"
+    href="assets/css/app.css"
+  >
+
+</head>
+
+
+<body>
+
+
+<div class="bg">
+
+  <div
+    class="stars"
+    aria-hidden="true"
+  ></div>
+
+  <div
+    class="glow"
+    aria-hidden="true"
+  ></div>
+
+</div>
+
+
+
+<header class="topbar">
+
+  <div class="topbar-inner">
+
+
+    <div class="brand">
+
+      <span class="brand-dot"></span>
+
+      <span class="brand-name">
+        Arwa Mohamed
+      </span>
+
+    </div>
+
+
+
+    <div class="top-actions">
+
+
+      <a
+        class="nav-btn"
+        href="projects.html"
+      >
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+        <span data-i18n="nav.back">
+          Retour
+        </span>
+
+      </a>
+
+
+
+      <!-- CORRIGÉ : contact de la même page -->
+
+      <a
+        class="nav-btn nav-btn-primary"
+        href="#contact"
+      >
+
+        <span data-i18n="nav.contact">
+          Contact
+        </span>
+
+      </a>
+
+
+
+      <button
+        id="langBtn"
+        class="lang-btn"
+        type="button"
+      >
+
+        <span id="langFlag">
+          🇫🇷
+        </span>
+
+        <span id="langCode">
+          FR
+        </span>
+
+      </button>
+
+
+
+      <button
+        id="themeBtn"
+        class="theme-btn"
+        type="button"
+      >
+
+        <span id="themeIcon">
+          🌙
+        </span>
+
+        <span id="themeCode">
+          DARK
+        </span>
+
+      </button>
+
+
+    </div>
+
+  </div>
+
+</header>
+
+
+
+<main class="wrap">
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+
+  <div class="hero-media">
+
+    <img
+      src="assets/img/dev.jpg"
+      alt="Apps case study cover"
+      class="hero-img"
+    >
+
+    <div
+      class="hero-overlay"
+      aria-hidden="true"
+    ></div>
+
+  </div>
+
+
+
+  <div class="hero-content">
+
+
+    <div class="chip">
+
+      <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+      <span data-i18n="hero.chip">
+        Apps • Web Dev • Desktop • UX
+      </span>
+
+    </div>
+
+
+
+    <h1 data-i18n="hero.title">
+      Applications & Impact
+    </h1>
+
+
+
+    <p
+      class="subtitle"
+      data-i18n="hero.subtitle"
+    >
+      Au-delà de la donnée, j’aime construire
+      des applications concrètes. Je m’intéresse
+      particulièrement aux sujets santé / médical
+      car je ressens que la tech peut réellement
+      aider les gens.
+    </p>
+
+
+
+    <div class="info-pills">
+
+
+      <div class="pill">
+
+        <i class="fa-solid fa-code"></i>
+
+        <span data-i18n="hero.pill1">
+          3 projets — web, théorie des langages,
+          app médicale
+        </span>
+
+      </div>
+
+
+
+      <div class="pill">
+
+        <i class="fa-solid fa-layer-group"></i>
+
+        <span data-i18n="hero.pill2">
+          Stack : Java/Spring • C++/Qt • SQLite • HTML/CSS
+        </span>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- PROJECTS -->
+
+<section class="section">
+
+
+  <div class="section-head">
+
+    <h2 data-i18n="blocks.title">
+      Projets
+    </h2>
+
+    <br>
+
+  </div>
+
+
+
+  <div class="blocks">
+
+
+    <!-- PROJECT 1 -->
+
+    <article class="block">
+
+
+      <div class="block-content">
+
+
+        <div class="block-top">
+
+          <div class="block-title">
+
+            <h3 data-i18n="p1.title">
+              Ebook Club — eBook Library
+            </h3>
+
+            <br>
+
+          </div>
+
+
+          <div class="stack">
+
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>Thymeleaf</span>
+            <span>DB</span>
+
+          </div>
+
+        </div>
+
+
+
+        <p
+          class="block-desc"
+          data-i18n="p1.desc"
+        >
+          Application web d’e-books interactive :
+          recherche par genre, recommandations,
+          favoris, notes/avis, fiche détaillée
+          et téléchargement de l’eBook.
+        </p>
+
+
+
+        <ul class="bullets">
+
+          <li>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span data-i18n="p1.b1">
+              Recherche par genre + filtres
+            </span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <span data-i18n="p1.b2">
+              Recommandations personnalisées
+            </span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-star"></i>
+            <span data-i18n="p1.b3">
+              Favoris, notes & avis
+            </span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-download"></i>
+            <span data-i18n="p1.b4">
+              Téléchargement eBook
+            </span>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+
+      <div class="block-media">
+
+        <img
+          src="assets/img/imagee.png"
+          alt="Ebook Club preview"
+        >
+
+      </div>
+
+
+    </article>
+
+
+
+    <!-- PROJECT 2 -->
+
+    <article class="block">
+
+
+      <div class="block-content">
+
+
+        <div class="block-top">
+
+          <div class="block-title">
+
+            <h3 data-i18n="p2.title">
+              Grapher — Parsing & AST (Langages)
+            </h3>
+
+            <br>
+
+          </div>
+
+
+          <div class="stack">
+
+            <span>Parsing</span>
+            <span>AST</span>
+            <span>Automates</span>
+            <span>Interpreter</span>
+
+          </div>
+
+        </div>
+
+
+
+        <p
+          class="block-desc"
+          data-i18n="p2.desc"
+        >
+          Application permettant de saisir une fonction
+          mathématique et d’afficher sa courbe :
+          analyse lexicale, analyse syntaxique (AST),
+          puis interprétation pour le tracé.
+        </p>
+
+
+
+        <ol class="steps">
+
+          <li>
+
+            <span class="step-n">
+              1
+            </span>
+
+            <span data-i18n="p2.s1">
+              Analyse lexicale :
+              transformer la formule en tokens
+            </span>
+
+          </li>
+
+
+          <li>
+
+            <span class="step-n">
+              2
+            </span>
+
+            <span data-i18n="p2.s2">
+              Analyse syntaxique :
+              valider la structure + générer un AST
+            </span>
+
+          </li>
+
+
+          <li>
+
+            <span class="step-n">
+              3
+            </span>
+
+            <span data-i18n="p2.s3">
+              Interprétation :
+              convertir l’AST en instructions de tracé
+            </span>
+
+          </li>
+
+        </ol>
+
+      </div>
+
+
+
+      <div class="block-media">
+
+        <img
+          src="assets/img/image1.png"
+          alt="Grapher preview"
+        >
+
+      </div>
+
+
+    </article>
+
+
+
+    <!-- PROJECT 3 -->
+
+    <article class="block">
+
+
+      <div class="block-content">
+
+
+        <div class="block-top">
+
+          <div class="block-title">
+
+            <h3 data-i18n="p3.title">
+              UberMedoc — App médicale
+            </h3>
+
+            <br>
+
+          </div>
+
+
+          <div class="stack">
+
+            <span>C++</span>
+            <span>Qt</span>
+            <span>SQLite</span>
+            <span>HTML/CSS</span>
+
+          </div>
+
+        </div>
+
+
+
+        <p
+          class="block-desc"
+          data-i18n="p3.desc"
+        >
+          Application de commande de médicaments
+          pour faciliter l’accès aux soins des personnes
+          qui ne peuvent pas se déplacer. Projet perfectible :
+          ajout futur d’une IA pour lecture d’ordonnances.
+        </p>
+
+
+
+        <ul class="bullets">
+
+          <li>
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span data-i18n="p3.b1">
+              Parcours de commande simple et clair
+            </span>
+
+          </li>
+
+
+          <li>
+
+            <i class="fa-solid fa-database"></i>
+
+            <span data-i18n="p3.b2">
+              Catalogue + stockage SQLite
+            </span>
+
+          </li>
+
+
+          <li>
+
+            <i class="fa-solid fa-shield-heart"></i>
+
+            <span data-i18n="p3.b3">
+              Idée d’évolution : OCR/IA ordonnance
+            </span>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+
+
+      <div class="block-media">
+
+        <img
+          src="assets/img/image.png"
+          alt="UberMedoc preview"
+        >
+
+      </div>
+
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section
+  id="contact"
+  class="cta"
+>
+
+  <div class="cta-card">
+
+
+    <h2 data-i18n="cta.title">
+      Envie d’en discuter ?
+    </h2>
+
+
+    <p
+      class="cta-sub"
+      data-i18n="cta.desc"
+    >
+      Je peux détailler la démarche,
+      les tests et les choix techniques.
+    </p>
+
+
+
+    <div class="cta-actions">
+
+
+      <!-- CORRIGÉ -->
+
+      <a
+        class="cta-btn primary"
+        href="mailto:etu.arwa@gmail.com"
+      >
+
+        <i class="fa-solid fa-envelope"></i>
+
+        <span data-i18n="cta.contact">
+          Me contacter
+        </span>
+
+      </a>
+
+
+
+      <a
+        class="cta-btn"
+        href="index.html#projects"
+      >
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+        <span data-i18n="cta.back">
+          Retour aux projets
+        </span>
+
+      </a>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<footer class="footer">
+
+  <span>
+    © <span id="year"></span>
+    Arwa Mohamed
+  </span>
+
+  <span class="dot">
+    •
+  </span>
+
+  <span data-i18n="footer.line">
+    Built with love & data ✨
+  </span>
+
+</footer>
+
+
+</main>
+
+
+
+<script src="assets/js/app.js"></script>
+
+
+<script>
+
+/* ===============================
+   GLOBAL SETTINGS
+================================ */
+
+const LS_THEME = "site_theme";
+const LS_LANG = "site_lang";
+
+
+/* ===============================
+   YEAR
+================================ */
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+
+
+/* ===============================
+   THEME
+================================ */
+
+function applyTheme(theme) {
+
+  if (theme !== "dark" && theme !== "light") {
+    theme = "dark";
+  }
+
+
+  document.documentElement.setAttribute(
+    "data-theme",
+    theme
+  );
+
+
+  localStorage.setItem(
+    LS_THEME,
+    theme
+  );
+
+
+  const icon =
+    document.getElementById("themeIcon");
+
+  const code =
+    document.getElementById("themeCode");
+
+
+  if (icon) {
+
+    icon.textContent =
+      theme === "dark"
+        ? "🌙"
+        : "☀️";
+
+  }
+
+
+  if (code) {
+
+    code.textContent =
+      theme === "dark"
+        ? "DARK"
+        : "LIGHT";
+
+  }
+
+}
+
+
+const savedTheme =
+  localStorage.getItem(LS_THEME) || "dark";
+
+applyTheme(savedTheme);
+
+
+
+const themeBtn =
+  document.getElementById("themeBtn");
+
+
+if (themeBtn) {
+
+  themeBtn.addEventListener(
+    "click",
+    () => {
+
+      const current =
+        localStorage.getItem(LS_THEME) || "dark";
+
+      applyTheme(
+        current === "dark"
+          ? "light"
+          : "dark"
+      );
+
+    }
+  );
+
+}
+
+
+
+/* ===============================
+   TRANSLATION DICTIONARY
+================================ */
+
+const translations = {
+
+  fr: {
+
+    "nav.back":
+      "Retour",
+
+    "nav.contact":
+      "Contact",
+
+
+    "hero.chip":
+      "Apps • Web Dev • Desktop • UX",
+
+    "hero.title":
+      "Applications & Impact",
+
+    "hero.subtitle":
+      "Au-delà de la donnée, j’aime construire des applications concrètes. Je m’intéresse particulièrement aux sujets santé / médical car je ressens que la tech peut réellement aider les gens.",
+
+    "hero.pill1":
+      "3 projets — web, théorie des langages, app médicale",
+
+    "hero.pill2":
+      "Stack : Java/Spring • C++/Qt • SQLite • HTML/CSS",
+
+
+    "blocks.title":
+      "Projets",
+
+
+    "p1.title":
+      "Ebook Club — eBook Library",
+
+    "p1.desc":
+      "Application web d’e-books interactive : recherche par genre, recommandations, favoris, notes/avis, fiche détaillée et téléchargement de l’eBook.",
+
+    "p1.b1":
+      "Recherche par genre + filtres",
+
+    "p1.b2":
+      "Recommandations personnalisées",
+
+    "p1.b3":
+      "Favoris, notes & avis",
+
+    "p1.b4":
+      "Téléchargement eBook",
+
+
+    "p2.title":
+      "Grapher — Parsing & AST (Langages)",
+
+    "p2.desc":
+      "Application permettant de saisir une fonction mathématique et d’afficher sa courbe : analyse lexicale, analyse syntaxique (AST), puis interprétation pour le tracé.",
+
+    "p2.s1":
+      "Analyse lexicale : transformer la formule en tokens",
+
+    "p2.s2":
+      "Analyse syntaxique : valider la structure + générer un AST",
+
+    "p2.s3":
+      "Interprétation : convertir l’AST en instructions de tracé",
+
+
+    "p3.title":
+      "UberMedoc — App médicale",
+
+    "p3.desc":
+      "Application de commande de médicaments pour faciliter l’accès aux soins des personnes qui ne peuvent pas se déplacer. Projet perfectible : ajout futur d’une IA pour lecture d’ordonnances.",
+
+    "p3.b1":
+      "Parcours de commande simple et clair",
+
+    "p3.b2":
+      "Catalogue + stockage SQLite",
+
+    "p3.b3":
+      "Idée d’évolution : OCR/IA ordonnance",
+
+
+    "cta.title":
+      "Envie d’en discuter ?",
+
+    "cta.desc":
+      "Je peux détailler la démarche, les tests et les choix techniques.",
+
+    "cta.contact":
+      "Me contacter",
+
+    "cta.back":
+      "Retour aux projets",
+
+
+    "footer.line":
+      "Built with love & data ✨"
+
+  },
+
+
+  en: {
+
+    "nav.back":
+      "Back",
+
+    "nav.contact":
+      "Contact",
+
+
+    "hero.chip":
+      "Apps • Web Dev • Desktop • UX",
+
+    "hero.title":
+      "Applications & Impact",
+
+    "hero.subtitle":
+      "Beyond data, I enjoy building practical applications. I am particularly interested in healthcare and medical topics because I believe technology can genuinely help people.",
+
+    "hero.pill1":
+      "3 projects — web, language theory, medical app",
+
+    "hero.pill2":
+      "Stack: Java/Spring • C++/Qt • SQLite • HTML/CSS",
+
+
+    "blocks.title":
+      "Projects",
+
+
+    "p1.title":
+      "Ebook Club — eBook Library",
+
+    "p1.desc":
+      "Interactive e-book web application featuring genre search, recommendations, favorites, ratings and reviews, detailed book pages and e-book downloads.",
+
+    "p1.b1":
+      "Genre search + filters",
+
+    "p1.b2":
+      "Personalized recommendations",
+
+    "p1.b3":
+      "Favorites, ratings & reviews",
+
+    "p1.b4":
+      "eBook downloads",
+
+
+    "p2.title":
+      "Grapher — Parsing & AST (Languages)",
+
+    "p2.desc":
+      "Application allowing users to enter a mathematical function and display its curve through lexical analysis, syntax analysis (AST) and interpretation.",
+
+    "p2.s1":
+      "Lexical analysis: transform the formula into tokens",
+
+    "p2.s2":
+      "Syntax analysis: validate the structure and generate an AST",
+
+    "p2.s3":
+      "Interpretation: convert the AST into plotting instructions",
+
+
+    "p3.title":
+      "UberMedoc — Medical App",
+
+    "p3.desc":
+      "Medicine ordering application designed to make healthcare more accessible to people who cannot travel easily. Future improvement: AI-based prescription reading.",
+
+    "p3.b1":
+      "Simple and clear ordering workflow",
+
+    "p3.b2":
+      "Catalog + SQLite storage",
+
+    "p3.b3":
+      "Future idea: OCR / prescription AI",
+
+
+    "cta.title":
+      "Want to discuss this project?",
+
+    "cta.desc":
+      "I can walk you through the methodology, tests and technical choices.",
+
+    "cta.contact":
+      "Email me",
+
+    "cta.back":
+      "Back to projects",
+
+
+    "footer.line":
+      "Built with love & data ✨"
+
+  }
+
+};
+
+
+
+/* ===============================
+   APPLY LANGUAGE
+================================ */
+
+function applyLang(lang) {
+
+  if (!translations[lang]) {
+    lang = "fr";
+  }
+
+
+  document.documentElement.setAttribute(
+    "lang",
+    lang
+  );
+
+
+  localStorage.setItem(
+    LS_LANG,
+    lang
+  );
+
+
+  document
+    .querySelectorAll("[data-i18n]")
+    .forEach((element) => {
+
+      const key =
+        element.getAttribute("data-i18n");
+
+      const value =
+        translations[lang][key];
+
+
+      if (value === undefined) {
+        return;
+      }
+
+
+      element.textContent =
+        value;
+
+    });
+
+
+
+  const langFlag =
+    document.getElementById("langFlag");
+
+  const langCode =
+    document.getElementById("langCode");
+
+
+  if (langFlag) {
+
+    langFlag.textContent =
+      lang === "fr"
+        ? "🇫🇷"
+        : "🇬🇧";
+
+  }
+
+
+  if (langCode) {
+
+    langCode.textContent =
+      lang === "fr"
+        ? "FR"
+        : "EN";
+
+  }
+
+
+
+  document.title =
+    lang === "fr"
+      ? "Applications & Impact — Arwa Mohamed"
+      : "Apps & Impact — Arwa Mohamed";
+
+}
+
+
+
+/* ===============================
+   INITIAL LANGUAGE
+================================ */
+
+const savedLang =
+  localStorage.getItem(LS_LANG) || "fr";
+
+applyLang(savedLang);
+
+
+
+/* ===============================
+   LANGUAGE BUTTON
+================================ */
+
+const langBtn =
+  document.getElementById("langBtn");
+
+
+if (langBtn) {
+
+  langBtn.addEventListener(
+    "click",
+    () => {
+
+      const current =
+        localStorage.getItem(LS_LANG) || "fr";
+
+      const next =
+        current === "fr"
+          ? "en"
+          : "fr";
+
+      applyLang(next);
+
+    }
+  );
+
+}
+
+</script>
+
+
+</body>
+</html>

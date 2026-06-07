@@ -1,0 +1,1955 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title data-i18n="page.title">Stroke Prediction Dashboard — Arwa Mohamed</title>
+  <meta name="description" data-i18n="page.desc" content="">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Case Study CSS -->
+  <link rel="stylesheet" href="assets/css/case-study.css" />
+</head>
+
+
+<body class="stroke-page">
+
+
+<!-- Background -->
+<div class="bg">
+  <div class="stars" aria-hidden="true"></div>
+  <div class="glow" aria-hidden="true"></div>
+</div>
+
+
+<!-- NAVBAR -->
+<header class="nav">
+
+  <a class="brand" href="index.html#projects">
+    <span class="brand-dot"></span>
+    <span class="brand-text">Arwa Mohamed</span>
+  </a>
+
+
+  <nav class="nav-links">
+
+    <a href="index.html#projects" data-i18n="nav.back">
+      ← Retour
+    </a>
+
+    <a href="#contact" class="btn small" data-i18n="nav.contact">
+      Contact
+    </a>
+
+  </nav>
+
+
+  <!-- Language -->
+  <div class="lang-switch">
+
+    <button id="langBtn" class="lang-btn">
+
+      <span id="langFlag">
+        🇫🇷
+      </span>
+
+      <span id="langCode">
+        FR
+      </span>
+
+    </button>
+
+  </div>
+
+
+  <!-- Theme -->
+
+  <div class="theme-switch">
+
+    <button id="themeBtn" class="theme-btn">
+
+      <span id="themeIco">
+        🌙
+      </span>
+
+      <span id="themeCode">
+        DARK
+      </span>
+
+    </button>
+
+  </div>
+
+
+</header>
+
+
+
+<main class="case">
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="case-hero reveal" id="overview">
+
+
+  <div class="case-hero-media">
+
+    <img src="assets/img/stroke.png"
+         alt="Stroke prediction dashboard">
+
+    <div class="case-hero-overlay"></div>
+
+  </div>
+
+
+
+  <div class="case-hero-content">
+
+
+    <div class="chip">
+
+      <i class="fa-solid fa-heart-pulse"></i>
+
+      <span data-i18n="hero.chip">
+        Healthcare Data • Machine Learning • Dashboard
+      </span>
+
+    </div>
+
+
+
+    <h1 data-i18n="hero.title">
+
+      Stroke Prediction
+      <br>
+
+      <span class="gradient">
+        Risk Analysis Dashboard
+      </span>
+
+    </h1>
+
+
+
+    <p class="subtitle" data-i18n="hero.subtitle">
+
+      Développer une solution Data Science capable
+      d’analyser les facteurs de risque d’AVC et de
+      comparer plusieurs modèles de prédiction.
+
+    </p>
+
+
+
+ <div class="case-meta stroke-meta">
+
+<a class="badge pdf-badge"
+href="assets/docs/stroke_dashboards.pdf"
+target="_blank">
+<i class="fa-solid fa-file-pdf"></i>
+<span data-i18n="badge.dashboard">
+Dashboards PDF
+</span>
+</a>
+
+
+<div class="badge">
+<i class="fa-solid fa-brain"></i>
+<span data-i18n="badge.ml">
+Machine Learning classification
+</span>
+</div>
+
+
+<a class="badge pdf-badge"
+href="assets/docs/stroke_compte_rendu.pdf"
+target="_blank">
+<i class="fa-solid fa-file-lines"></i>
+<span data-i18n="badge.report">
+Compte rendu PDF
+</span>
+</a>
+
+
+<div class="badge">
+<i class="fa-solid fa-chart-line"></i>
+<span data-i18n="badge.visual">
+Data Visualization Dashboard
+</span>
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- =========================
+     OVERVIEW
+========================= -->
+
+
+<section class="section" id="content">
+
+
+<div class="section-head reveal">
+
+
+<h2 data-i18n="overview.title">
+Overview
+</h2>
+
+
+<p class="muted" data-i18n="overview.desc">
+
+Analyser les facteurs associés aux AVC et construire un modèle
+de prédiction permettant d’identifier les profils à risque.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="grid-2">
+
+
+
+<!-- CARD 1 -->
+
+<div class="card reveal">
+
+
+<h3 data-i18n="overview.block1t">
+Ce que j’ai réalisé
+</h3>
+
+
+
+<ul class="list">
+
+
+<li>
+
+<i class="fa-solid fa-database"></i>
+
+<span data-i18n="overview.b1">
+Nettoyage et préparation du dataset médical
+</span>
+
+</li>
+
+
+
+<li>
+
+<i class="fa-solid fa-chart-column"></i>
+
+<span data-i18n="overview.b2">
+Analyse exploratoire des facteurs de risque
+</span>
+
+</li>
+
+
+
+<li>
+
+<i class="fa-solid fa-robot"></i>
+
+<span data-i18n="overview.b3">
+Entraînement et comparaison de modèles ML
+</span>
+
+</li>
+
+
+
+<li>
+
+<i class="fa-solid fa-display"></i>
+
+<span data-i18n="overview.b4">
+Création d’un dashboard de visualisation
+</span>
+
+</li>
+
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+<!-- CARD 2 -->
+
+<div class="card reveal">
+
+
+<h3 data-i18n="overview.block2t">
+Stack
+</h3>
+
+
+
+<div class="chips">
+
+<span>Python</span>
+<span>Pandas</span>
+<span>Scikit-learn</span>
+<span>Machine Learning</span>
+<span>Data Visualization</span>
+<span>Dashboard</span>
+
+</div>
+
+
+
+
+<div class="quote">
+
+
+<i class="fa-solid fa-quote-left"></i>
+
+
+<p data-i18n="overview.quote">
+
+Turning healthcare data into actionable insights.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+<!-- =========================
+     APPROACH
+========================= -->
+
+
+<section class="section" id="approach">
+
+
+<div class="section-head reveal">
+
+<h2 data-i18n="steps.title">
+Approach
+</h2>
+
+
+<p class="muted" data-i18n="steps.desc">
+
+Une démarche en 3 étapes : préparation des données → modélisation → analyse des résultats.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="timeline">
+
+
+
+<!-- STEP 1 -->
+
+<div class="t-item reveal">
+
+
+<div class="t-dot"></div>
+
+
+<div class="t-card">
+
+
+<div class="t-top">
+
+<h3 data-i18n="steps.s1.title">
+1) Data Preparation
+</h3>
+
+
+<span class="pill" data-i18n="steps.s1.pill">
+Preprocessing
+</span>
+
+
+</div>
+
+
+
+
+<ul class="list">
+
+
+<li>
+
+<i class="fa-solid fa-check"></i>
+
+<span data-i18n="steps.s1.li1">
+Nettoyage des données et traitement des valeurs manquantes
+</span>
+
+</li>
+
+
+
+<li>
+
+<i class="fa-solid fa-check"></i>
+
+<span data-i18n="steps.s1.li2">
+Analyse des variables : âge, glucose, hypertension, BMI...
+</span>
+
+</li>
+
+
+
+<li>
+
+<i class="fa-solid fa-check"></i>
+
+<span data-i18n="steps.s1.li3">
+Préparation du dataset pour la classification
+</span>
+
+</li>
+
+
+
+</ul>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- STEP 2 -->
+
+<div class="t-item reveal">
+
+
+<div class="t-dot"></div>
+
+
+<div class="t-card">
+
+
+<div class="t-top">
+
+
+<h3 data-i18n="steps.s2.title">
+2) Machine Learning Models
+</h3>
+
+
+<span class="pill" data-i18n="steps.s2.pill">
+Modeling
+</span>
+
+
+</div>
+
+
+
+
+<ul class="list">
+
+
+<li>
+
+<i class="fa-solid fa-robot"></i>
+
+<span data-i18n="steps.s2.li1">
+Entraînement de plusieurs modèles de classification
+</span>
+
+</li>
+
+
+
+<li>
+
+<i class="fa-solid fa-chart-line"></i>
+
+<span data-i18n="steps.s2.li2">
+Évaluation avec AUC, Recall et F1-score
+</span>
+
+</li>
+
+
+
+<li>
+
+<i class="fa-solid fa-ranking-star"></i>
+
+<span data-i18n="steps.s2.li3">
+Sélection du modèle le plus performant
+</span>
+
+</li>
+
+
+
+</ul>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- STEP 3 -->
+
+<div class="t-item reveal">
+
+
+<div class="t-dot"></div>
+
+
+<div class="t-card">
+
+
+<div class="t-top">
+
+
+<h3 data-i18n="steps.s3.title">
+3) Analysis & Dashboard
+</h3>
+
+
+<span class="pill" data-i18n="steps.s3.pill">
+Insights
+</span>
+
+
+</div>
+
+
+
+
+<ul class="list">
+
+
+<li>
+
+<i class="fa-solid fa-chart-pie"></i>
+
+<span data-i18n="steps.s3.li1">
+Analyse des facteurs influençant le risque d’AVC
+</span>
+
+</li>
+
+
+
+<li>
+
+<i class="fa-solid fa-eye"></i>
+
+<span data-i18n="steps.s3.li2">
+Création de visualisations interprétables
+</span>
+
+</li>
+
+
+
+<li>
+
+<i class="fa-solid fa-file-lines"></i>
+
+<span data-i18n="steps.s3.li3">
+Présentation des résultats dans un dashboard
+</span>
+
+</li>
+
+
+
+</ul>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =========================
+     RESULTS
+========================= -->
+
+
+<section class="section" id="results">
+
+
+<div class="section-head reveal">
+
+
+<h2 data-i18n="results.title">
+Results
+</h2>
+
+
+
+<p class="muted" data-i18n="results.desc">
+
+Les résultats montrent les tendances principales du dataset
+et les performances des modèles développés.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="grid-2">
+
+
+
+
+
+<div class="card reveal">
+
+
+<h3 data-i18n="results.insightsT">
+Main Insights
+</h3>
+
+
+
+<ul class="list">
+
+
+<li>
+
+<i class="fa-solid fa-person"></i>
+
+<span data-i18n="results.i1">
+L’âge est un facteur fortement associé au risque d’AVC
+</span>
+
+</li>
+
+
+
+<li>
+
+<i class="fa-solid fa-heart-circle-exclamation"></i>
+
+<span data-i18n="results.i2">
+Certains facteurs médicaux augmentent significativement le risque
+</span>
+
+</li>
+
+
+
+<li>
+
+<i class="fa-solid fa-chart-simple"></i>
+
+<span data-i18n="results.i3">
+Comparaison objective des performances des modèles ML
+</span>
+
+</li>
+
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card reveal">
+
+
+<h3 data-i18n="results.skillsT">
+Skills demonstrated
+</h3>
+
+
+
+<div class="chips">
+
+
+<span>Python</span>
+
+<span>EDA</span>
+
+<span>Feature Analysis</span>
+
+<span>Machine Learning</span>
+
+<span>Model Evaluation</span>
+
+<span>Data Visualization</span>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =========================
+     VISUALS
+========================= -->
+
+
+<section class="case-section section" id="charts">
+
+
+
+<div class="section-head reveal">
+
+
+<h2 data-i18n="charts.title">
+Visuals
+</h2>
+
+
+<p class="muted" data-i18n="charts.sub">
+
+Trois visualisations clés montrant les tendances du dataset
+et les performances des modèles.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="zigzag">
+
+
+
+
+
+
+
+<!-- GRAPH 1 -->
+
+<article class="zig-card reveal">
+
+
+<div class="zig-media">
+
+
+<img src="assets/img/stroke1.png"
+alt="Stroke rate by age">
+
+
+</div>
+
+
+
+
+<div class="zig-body">
+
+
+<h3 data-i18n="charts.c1.title">
+
+Taux d’AVC réel par tranche d’âge (%)
+
+</h3>
+
+
+
+<p class="muted" data-i18n="charts.c1.desc">
+
+Analyse de la relation entre l’âge et l’apparition des AVC.
+
+</p>
+
+
+</div>
+
+
+</article>
+
+
+
+
+
+
+
+
+<!-- GRAPH 2 -->
+
+
+<article class="zig-card reveal">
+
+
+<div class="zig-media">
+
+
+<img src="assets/img/stroke2.png"
+alt="Stroke risk factors">
+
+
+</div>
+
+
+
+
+
+<div class="zig-body">
+
+
+<h3 data-i18n="charts.c2.title">
+
+Taux d’AVC par facteur de risque (%)
+
+</h3>
+
+
+
+<p class="muted" data-i18n="charts.c2.desc">
+
+Identification des variables médicales associées au risque d’AVC.
+
+</p>
+
+
+</div>
+
+
+</article>
+
+
+
+
+
+
+
+
+
+<!-- GRAPH 3 -->
+
+
+<article class="zig-card reveal">
+
+
+<div class="zig-media">
+
+
+<img src="assets/img/stroke3.png"
+alt="Model comparison">
+
+
+</div>
+
+
+
+
+
+<div class="zig-body">
+
+
+<h3 data-i18n="charts.c3.title">
+
+Comparaison des modèles ML
+
+</h3>
+
+
+
+<p class="muted" data-i18n="charts.c3.desc">
+
+Comparaison des modèles selon AUC, Recall et F1-score.
+
+</p>
+
+
+</div>
+
+
+</article>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<br><br><br>
+
+
+
+
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+
+<section id="contact" class="section">
+
+
+<div class="contact card reveal">
+
+
+<h3 data-i18n="end.title">
+
+Envie d’en discuter ?
+
+</h3>
+
+
+
+<p class="muted" data-i18n="end.desc">
+
+Je peux détailler la méthodologie, les modèles testés et les résultats.
+
+</p>
+
+
+
+
+
+<div class="hero-cta">
+
+
+<a class="btn" href="mailto:etu.arwa@gmail.com">
+
+<i class="fa-solid fa-envelope"></i>
+
+<span data-i18n="end.mail">
+Me contacter
+</span>
+
+
+</a>
+
+
+
+
+
+<a class="btn ghost" href="index.html#projects">
+
+
+<i class="fa-solid fa-arrow-left"></i>
+
+
+<span data-i18n="end.back">
+Retour aux projets
+</span>
+
+
+</a>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="tiny muted" style="padding:0 18px 40px;">
+
+
+© <span id="year"></span> Arwa Mohamed —
+
+<span data-i18n="footer">
+Built with love & data ✨
+</span>
+
+
+</div>
+
+
+</section>
+
+
+</main>
+<script>
+
+
+// =========================
+// Reveal animation
+// =========================
+
+const io = new IntersectionObserver((entries)=>{
+
+  entries.forEach(e=>{
+
+    if(e.isIntersecting){
+
+      e.target.classList.add("in");
+
+    }
+
+  });
+
+},{threshold:0.12});
+
+
+document.querySelectorAll(".reveal")
+.forEach(el=>io.observe(el));
+
+
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+
+
+
+
+
+// =========================
+// THEME
+// =========================
+
+
+const LS_THEME = "site_theme";
+const LS_LANG  = "site_lang";
+
+
+
+function syncThemeUI(theme){
+
+const ico = document.getElementById("themeIco");
+const code = document.getElementById("themeCode");
+
+
+if(ico)
+ico.textContent = theme==="light" ? "☀️" : "🌙";
+
+
+if(code)
+code.textContent = theme==="light" ? "LIGHT" : "DARK";
+
+
+}
+
+
+
+function applyTheme(theme){
+
+document.documentElement
+.setAttribute("data-theme",theme);
+
+
+localStorage.setItem(
+LS_THEME,
+theme
+);
+
+
+syncThemeUI(theme);
+
+}
+
+
+
+const themeBtn =
+document.getElementById("themeBtn");
+
+
+
+applyTheme(
+localStorage.getItem(LS_THEME) || "dark"
+);
+
+
+
+if(themeBtn){
+
+themeBtn.addEventListener("click",()=>{
+
+
+const current =
+localStorage.getItem(LS_THEME) || "dark";
+
+
+applyTheme(
+current==="dark" ? "light" : "dark"
+);
+
+
+});
+
+
+}
+
+
+
+
+
+
+
+// =========================
+// I18N
+// =========================
+
+
+const dict = {
+
+
+
+fr:{
+
+"badge.dashboard":
+"Dashboards PDF",
+
+"badge.ml":
+"Classification Machine Learning",
+
+"badge.report":
+"Compte rendu PDF",
+
+"badge.visual":
+"Dashboard Data Visualization",
+"page.title":
+"Stroke Prediction Dashboard — Arwa Mohamed",
+
+
+"page.desc":
+"Projet Data Science santé : analyse des facteurs de risque AVC et comparaison de modèles Machine Learning.",
+
+
+
+"nav.back":
+"← Retour",
+
+
+"nav.contact":
+"Contact",
+
+
+
+
+"hero.chip":
+"Healthcare Data • Machine Learning • Dashboard",
+
+
+
+"hero.title":
+"Stroke Prediction<br><span class='gradient'>Risk Analysis Dashboard</span>",
+
+
+
+"hero.subtitle":
+"Développer une solution Data Science capable d’analyser les facteurs de risque d’AVC et de comparer plusieurs modèles de prédiction.",
+
+
+
+"meta.context":
+"Projet académique (Université)",
+
+
+"meta.ml":
+"Classification Machine Learning",
+
+
+"meta.dashboard":
+"Dashboard Data Visualization",
+
+"meta.dashboardPdf":
+"Dashboards PDF",
+
+"meta.reportPdf":
+"Compte rendu PDF",
+
+
+"hero.note":
+"Dataset médical utilisé dans un contexte académique. Objectif : analyse des risques et comparaison des modèles.",
+
+
+
+
+
+
+
+"overview.title":
+"Vue d’ensemble",
+
+
+"overview.desc":
+"Analyser les facteurs associés aux AVC et construire un modèle de prédiction permettant d’identifier les profils à risque.",
+
+
+
+"overview.block1t":
+"Ce que j’ai réalisé",
+
+
+"overview.b1":
+"Nettoyage et préparation du dataset médical",
+
+
+"overview.b2":
+"Analyse exploratoire des facteurs de risque",
+
+
+"overview.b3":
+"Entraînement et comparaison de modèles ML",
+
+
+"overview.b4":
+"Création d’un dashboard de visualisation",
+
+
+
+"overview.block2t":
+"Stack",
+
+
+"overview.quote":
+"Transformer les données médicales en informations exploitables.",
+
+
+
+
+
+
+
+"steps.title":
+"Approche",
+
+
+
+"steps.desc":
+"Une démarche en 3 étapes : préparation des données → modélisation → analyse des résultats.",
+
+
+
+"steps.s1.title":
+"1) Préparation des données",
+
+
+"steps.s1.pill":
+"Preprocessing",
+
+
+"steps.s1.li1":
+"Nettoyage des données et traitement des valeurs manquantes",
+
+
+"steps.s1.li2":
+"Analyse des variables : âge, glucose, hypertension, BMI...",
+
+
+"steps.s1.li3":
+"Préparation du dataset pour la classification",
+
+
+
+
+
+
+"steps.s2.title":
+"2) Modèles Machine Learning",
+
+
+"steps.s2.pill":
+"Modeling",
+
+
+"steps.s2.li1":
+"Entraînement de plusieurs modèles de classification",
+
+
+"steps.s2.li2":
+"Évaluation avec AUC, Recall et F1-score",
+
+
+"steps.s2.li3":
+"Sélection du modèle le plus performant",
+
+
+
+
+
+"steps.s3.title":
+"3) Analyse & Dashboard",
+
+
+"steps.s3.pill":
+"Insights",
+
+
+"steps.s3.li1":
+"Analyse des facteurs influençant le risque d’AVC",
+
+
+"steps.s3.li2":
+"Création de visualisations interprétables",
+
+
+"steps.s3.li3":
+"Présentation des résultats dans un dashboard",
+
+
+
+
+
+
+
+"results.title":
+"Résultats",
+
+
+"results.desc":
+"Les résultats montrent les tendances principales du dataset et les performances des modèles développés.",
+
+
+"results.insightsT":
+"Insights principaux",
+
+
+"results.i1":
+"L’âge est un facteur fortement associé au risque d’AVC",
+
+
+"results.i2":
+"Certains facteurs médicaux augmentent significativement le risque",
+
+
+"results.i3":
+"Comparaison objective des performances des modèles ML",
+
+
+
+"results.skillsT":
+"Compétences démontrées",
+
+
+
+
+
+
+"charts.title":
+"Visualisations",
+
+
+"charts.sub":
+"Trois graphiques clés montrant les tendances du dataset et les performances des modèles.",
+
+
+
+"charts.c1.title":
+"Taux d’AVC réel par tranche d’âge (%)",
+
+
+"charts.c1.desc":
+"Analyse de la relation entre l’âge et l’apparition des AVC.",
+
+
+
+"charts.c2.title":
+"Taux d’AVC par facteur de risque (%)",
+
+
+"charts.c2.desc":
+"Identification des variables médicales associées au risque d’AVC.",
+
+
+
+"charts.c3.title":
+"Comparaison des modèles ML",
+
+
+"charts.c3.desc":
+"Comparaison des modèles selon AUC, Recall et F1-score.",
+
+
+
+
+
+"end.title":
+"Envie d’en discuter ?",
+
+
+"end.desc":
+"Je peux détailler la méthodologie, les modèles testés et les résultats.",
+
+
+"end.mail":
+"Me contacter",
+
+
+"end.back":
+"Retour aux projets",
+
+
+
+"footer":
+"Built with love & data ✨"
+
+
+
+},
+
+
+
+
+
+
+en:{
+
+
+
+"page.title":
+"Stroke Prediction Dashboard — Arwa Mohamed",
+
+
+"page.desc":
+"Healthcare Data Science project: stroke risk analysis and Machine Learning model comparison.",
+
+
+
+"nav.back":
+"← Back",
+
+
+"nav.contact":
+"Contact",
+
+
+
+
+"hero.chip":
+"Healthcare Data • Machine Learning • Dashboard",
+
+
+
+"hero.title":
+"Stroke Prediction<br><span class='gradient'>Risk Analysis Dashboard</span>",
+
+
+
+"hero.subtitle":
+"Develop a Data Science solution to analyze stroke risk factors and compare several prediction models.",
+
+
+
+"meta.context":
+"Academic project (University)",
+
+
+"meta.ml":
+"Machine Learning classification",
+
+
+"meta.dashboard":
+"Data Visualization Dashboard",
+
+
+
+"hero.note":
+"Medical dataset used in an academic context. Goal: risk analysis and model comparison.",
+
+
+"meta.dashboardPdf":
+"Dashboard PDF",
+
+"meta.reportPdf":
+"Project Report PDF",
+
+
+
+"overview.title":
+"Overview",
+
+
+
+"overview.desc":
+"Analyze stroke-related factors and build prediction models to identify high-risk profiles.",
+
+
+
+"overview.block1t":
+"What I did",
+
+
+
+"overview.b1":
+"Medical dataset cleaning and preparation",
+
+
+"overview.b2":
+"Exploratory analysis of risk factors",
+
+
+"overview.b3":
+"Training and comparison of ML models",
+
+
+"overview.b4":
+"Creation of a visualization dashboard",
+
+
+
+"overview.block2t":
+"Stack",
+
+
+
+"overview.quote":
+"Turning healthcare data into actionable insights.",
+
+
+
+
+
+
+"steps.title":
+"Approach",
+
+
+"steps.desc":
+"A 3-step workflow: data preparation → modeling → results analysis.",
+
+
+
+"steps.s1.title":
+"1) Data Preparation",
+
+
+"steps.s1.pill":
+"Preprocessing",
+
+
+"steps.s1.li1":
+"Data cleaning and missing value treatment",
+
+
+"steps.s1.li2":
+"Feature analysis: age, glucose, hypertension, BMI...",
+
+
+"steps.s1.li3":
+"Dataset preparation for classification",
+
+
+
+
+"steps.s2.title":
+"2) Machine Learning Models",
+
+
+"steps.s2.pill":
+"Modeling",
+
+
+"steps.s2.li1":
+"Training several classification models",
+
+
+"steps.s2.li2":
+"Evaluation using AUC, Recall and F1-score",
+
+
+"steps.s2.li3":
+"Selecting the best performing model",
+
+
+
+
+"steps.s3.title":
+"3) Analysis & Dashboard",
+
+
+"steps.s3.pill":
+"Insights",
+
+
+"steps.s3.li1":
+"Analysis of stroke risk factors",
+
+
+"steps.s3.li2":
+"Creation of interpretable visualizations",
+
+
+"steps.s3.li3":
+"Results presentation through a dashboard",
+
+
+
+
+
+
+"results.title":
+"Results",
+
+
+"results.desc":
+"Main dataset trends and Machine Learning performance evaluation.",
+
+
+
+"results.insightsT":
+"Main Insights",
+
+
+"results.i1":
+"Age is strongly associated with stroke risk",
+
+
+"results.i2":
+"Some medical factors significantly increase risk",
+
+
+"results.i3":
+"Objective comparison of ML model performance",
+
+
+
+"results.skillsT":
+"Skills demonstrated",
+
+
+
+
+
+
+"charts.title":
+"Visuals",
+
+
+"charts.sub":
+"Three key charts showing dataset trends and model performances.",
+
+
+
+"charts.c1.title":
+"Real stroke rate by age group (%)",
+
+
+"charts.c1.desc":
+"Analysis of the relationship between age and stroke occurrence.",
+
+
+
+"charts.c2.title":
+"Stroke rate by risk factor (%)",
+
+
+"charts.c2.desc":
+"Identification of medical variables associated with stroke risk.",
+
+
+
+"charts.c3.title":
+"ML Model Comparison",
+
+
+"charts.c3.desc":
+"Comparison based on AUC, Recall and F1-score.",
+
+"badge.dashboard":
+"Dashboard PDF",
+
+"badge.ml":
+"Machine Learning Classification",
+
+"badge.report":
+"Project Report PDF",
+
+"badge.visual":
+"Data Visualization Dashboard",
+
+
+
+"end.title":
+"Want to discuss this project?",
+
+
+"end.desc":
+"I can explain the methodology, tested models and results.",
+
+
+"end.mail":
+"Email me",
+
+
+"end.back":
+"Back to projects",
+
+
+
+"footer":
+"Built with love & data ✨"
+
+
+
+}
+
+
+
+};
+
+
+
+
+
+
+
+
+
+function syncLangUI(lang){
+
+
+const flag =
+document.getElementById("langFlag");
+
+
+const code =
+document.getElementById("langCode");
+
+
+
+if(flag)
+flag.textContent =
+lang==="fr" ? "🇫🇷" : "🇬🇧";
+
+
+if(code)
+code.textContent =
+lang==="fr" ? "FR" : "EN";
+
+
+
+}
+
+
+
+
+
+
+
+function applyLang(lang){
+
+
+
+document.documentElement
+.setAttribute("lang",lang);
+
+
+
+localStorage.setItem(
+LS_LANG,
+lang
+);
+
+
+
+syncLangUI(lang);
+
+
+
+document.querySelectorAll("[data-i18n]")
+.forEach(el=>{
+
+
+const key =
+el.getAttribute("data-i18n");
+
+
+
+if(!dict[lang][key])
+return;
+
+
+
+if(el.tagName==="TITLE"){
+
+document.title =
+dict[lang][key];
+
+return;
+
+}
+
+
+
+if(el.tagName==="META"){
+
+el.setAttribute(
+"content",
+dict[lang][key]
+);
+
+return;
+
+}
+
+
+
+if(key==="hero.title"){
+
+el.innerHTML =
+dict[lang][key];
+
+}
+
+else{
+
+el.innerHTML =
+dict[lang][key];
+
+}
+
+
+
+});
+
+
+
+}
+
+
+
+
+
+
+const langBtn =
+document.getElementById("langBtn");
+
+
+
+applyLang(
+localStorage.getItem(LS_LANG) || "fr"
+);
+
+
+
+if(langBtn){
+
+
+langBtn.addEventListener("click",()=>{
+
+
+const current =
+localStorage.getItem(LS_LANG) || "fr";
+
+
+applyLang(
+current==="fr" ? "en" : "fr"
+);
+
+
+
+});
+
+
+}
+
+
+
+
+</script>
