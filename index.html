@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arwa Mohamed — Data Analyst</title>
+  <meta name="description" content="Portfolio d'Arwa Mohamed — Data Analyst / Data Quality / Data Preparation." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Arwa Mohamed — Data Analyst" />
+  <meta property="og:description" content="Data preparation • data quality • EDA • SQL • Python • Oracle" />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Background glitter -->
+  <div class="bg">
+    <div class="stars" aria-hidden="true"></div>
+    <div class="glow" aria-hidden="true"></div>
+  </div>
+
+  <!-- Top progress bar -->
+  <div class="progress" id="progress"></div>
+
+  <!-- Navbar -->
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Accueil">
+      <span class="brand-dot"></span>
+      <span class="brand-text">Arwa Mohamed</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" data-i18n="nav.about">À propos</a>
+      <a href="#projects" data-i18n="nav.projects">Projets</a>
+      <a href="#experience" data-i18n="nav.experience">Expériences</a>
+      <a href="#skills" data-i18n="nav.skills">Compétences</a>
+      <a href="#contact" class="btn small" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <!-- Language toggle -->
+    <div class="lang-switch" aria-label="Language switcher">
+      <button id="langBtn" class="lang-btn" type="button" aria-label="Switch language">
+        <span class="lang-flag" id="langFlag" aria-hidden="true">🇫🇷</span>
+        <span class="lang-code" id="langCode">FR</span>
+      </button>
+    </div>
+
+    <!-- Theme toggle -->
+    <div class="theme-switch" aria-label="Theme switcher">
+      <button id="themeBtn" class="theme-btn" type="button" aria-label="Switch theme">
+        <span class="theme-ico" id="themeIco" aria-hidden="true">🌙</span>
+        <span class="theme-code" id="themeCode">DARK</span>
+      </button>
+    </div>
+
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Main -->
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-media" data-tilt>
+        <img src="assets/img/hero-banner.png" alt="Bannière portfolio" class="hero-img" />
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="chip reveal">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <span data-i18n="hero.chip">Data Analyst • Data Quality • Data Preparation</span>
+        </div>
+
+        <h1 class="reveal">
+          <span data-i18n="hero.title1">Des données brutes</span><br />
+          <span data-i18n="hero.title2">à des <span class="gradient">insights fiables</span>.</span>
+        </h1>
+
+        <p class="subtitle reveal" data-i18n="hero.subtitle">
+          Étudiante en Master Data Science (University de Tours). J’adore nettoyer, structurer,
+          valider et analyser la donnée pour produire des résultats clairs, exploitables, et robustes.
+        </p>
+
+        <div class="hero-cta reveal">
+          <a class="btn" href="#projects">
+            <span data-i18n="hero.ctaProjects">Voir mes projets</span> <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a class="btn ghost" href="#contact" data-i18n="hero.ctaContact">Me contacter</a>
+        </div>
+
+        <div class="hero-badges reveal">
+          <div class="badge">
+            <i class="fa-solid fa-database"></i>
+            <span data-i18n="hero.badge1">SQL • Oracle • PostgreSQL</span>
+          </div>
+          <div class="badge">
+            <i class="fa-solid fa-chart-line"></i>
+            <span data-i18n="hero.badge2">EDA • Qualité • Pipelines</span>
+          </div>
+          <div class="badge">
+            <i class="fa-brands fa-python"></i>
+            <span data-i18n="hero.badge3">Python • KNIME</span>
+          </div>
+        </div>
+
+        <div class="hero-mini reveal">
+          <img class="avatar" src="assets/img/avatar-logo.png" alt="Logo Arwa" />
+          <div>
+            <strong>Arwa Mohamed</strong>
+            <div class="muted">
+              <span data-i18n="hero.location">Tours, France</span> • <a href="mailto:etu.arwa@gmail.com">etu.arwa@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Logos strip -->
+    <section class="strip reveal">
+      <div class="strip-inner">
+        <span class="strip-title" data-i18n="strip.title">Ils font partie de mon parcours</span>
+
+        <div class="logos logos-round">
+          <a class="logo-pill" href="#sah" aria-label="Sahibuka Al Quran">
+            <span class="logo-circle">
+              <img src="assets/img/logo-sahibuka.png" alt="Sahibuka Al Quran"/>
+            </span>
+          </a>
+
+          <a class="logo-pill" href="https://www.econocom.com" target="_blank" rel="noreferrer" aria-label="Econocom">
+            <span class="logo-circle">
+              <img src="assets/img/logo-econocom.webp" alt="Econocom" />
+            </span>
+          </a>
+
+          <a class="logo-pill" href="https://www.kisio.com" target="_blank" rel="noreferrer" aria-label="Kisio">
+            <span class="logo-circle">
+              <img src="assets/img/logo-kisio1.jpg" alt="Kisio" />
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="section-head reveal">
+        <h2 data-i18n="about.title">À propos</h2>
+        <p class="muted" data-i18n="about.desc">
+          Mon focus : rendre la donnée propre, cohérente, et digne de confiance avant toute décision.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card reveal">
+          <h3 data-i18n="about.likeTitle">Ce que j’aime faire</h3>
+          <ul class="list">
+            <li><i class="fa-solid fa-sparkles"></i> <span data-i18n="about.like1">Data cleaning & structuration</span></li>
+            <li><i class="fa-solid fa-shield-heart"></i> <span data-i18n="about.like2">Contrôles qualité & validation</span></li>
+            <li><i class="fa-solid fa-magnifying-glass-chart"></i> <span data-i18n="about.like3">Analyse exploratoire (EDA)</span></li>
+            <li><i class="fa-solid fa-diagram-project"></i> <span data-i18n="about.like4">Pipelines et logique de traitement</span></li>
+          </ul>
+          <div class="quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p data-i18n="about.quote">Good ML starts with clean data.</p>
+          </div>
+        </div>
+        
+        <div class="impact-block card-sub">
+
+
+        <div class="card reveal">
+          <h3 data-i18n="about.profileTitle">Education</h3>
+          <br>
+          <div class="kpi">
+            <div class="kpi-item">
+              <div class="kpi-value" data-i18n="about.kpi1.value">Master</div>
+              <div class="kpi-label" data-i18n="about.kpi1.label">Data Science (2025–2027)</div>
+            </div>
+            <div class="kpi-item">
+              <div class="kpi-value" data-i18n="about.kpi2.value">Bachelor's degree</div>
+              <div class="kpi-label" data-i18n="about.kpi2.label">Computer Science (2021–2025)</div>
+            </div>
+            <div class="kpi-item">
+              <div class="kpi-value" data-i18n="about.kpi3.value">High school diploma</div>
+              <div class="kpi-label" data-i18n="about.kpi3.label">STI2D high school diploma, Architecture & Construction specialization, honours.</div>
+            </div>
+          </div>
+        </div>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="section-head reveal">
+        <h2 data-i18n="projects.title">Projets</h2>
+        <p class="muted" data-i18n="projects.desc">Des projets orientés qualité, nettoyage, structuration et analyse.</p>
+      </div>
+
+      <!-- IMPORTANT: container cards (grid) -->
+      <div class="cards">
+
+  <!-- DPE -->
+  <a class="project reveal project-link" href="dpe.html" aria-label="Open DPE case study">
+    <div class="project-media">
+      <img src="assets/img/dpe.png" alt="Projet DPE" />
+      <span class="tag" data-i18n="projects.tag1">Data Quality</span>
+
+      <span class="case-pill-badge">
+        <span data-i18n="projects.case">Case Study</span>
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </span>
+    </div>
+
+    <div class="project-body">
+      <h3 data-i18n="projects.p1.title">
+        Energy Performance Data (DPE)
+        <span class="title-ico" aria-hidden="true">↗</span>
+      </h3>
+
+      <p data-i18n="projects.p1.desc"></p>
+
+      <div class="stack">
+        <span>Python</span><span>R</span><span>SQL</span>
+      </div>
+
+      <div class="open-hint">
+        <span data-i18n="projects.openCase">Open case study</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+    </div>
+  </a>
+
+  <!-- ORACLE -->
+  <a class="project reveal project-link" href="oracle.html" aria-label="Open Oracle case study">
+    <div class="project-media">
+      <img src="assets/img/oracle.png" alt="Oracle Database Security" />
+      <span class="tag" data-i18n="projects.tag2">Oracle • Security</span>
+
+      <span class="case-pill-badge">
+        <span data-i18n="projects.case">Case Study</span>
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </span>
+    </div>
+
+    <div class="project-body">
+      <h3 data-i18n="projects.p2.title">
+        Oracle DBA • Sécurité & Data
+        <span class="title-ico" aria-hidden="true">↗</span>
+      </h3>
+
+      <p data-i18n="projects.p2.desc"></p>
+
+      <div class="stack">
+        <span>Oracle 19c</span><span>TDE</span><span>Data Pump</span><span>Backup/Restore</span>
+      </div>
+
+      <div class="open-hint">
+        <span data-i18n="projects.openCase">Open case study</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+    </div>
+  </a>
+
+  <!-- APPS -->
+  <a class="project reveal project-link" href="app.html" aria-label="Open Apps case study">
+    <div class="project-media">
+      <img src="assets/img/apps.png" alt="Apps case study" />
+      <span class="tag" data-i18n="projects.tag3">Software</span>
+
+      <span class="case-pill-badge">
+        <span data-i18n="projects.case">Case Study</span>
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </span>
+    </div>
+
+    <div class="project-body">
+      <h3 data-i18n="projects.p3.title">
+        Apps & Web Dev
+        <span class="title-ico" aria-hidden="true">↗</span>
+      </h3>
+
+      <p data-i18n="projects.p3.desc"></p>
+
+      <div class="stack">
+        <span>Java</span><span>Spring</span><span>C++</span><span>Qt</span><span>SQLite</span>
+      </div>
+
+      <div class="open-hint">
+        <span data-i18n="projects.openPage">View page</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+    </div>
+  </a>
+
+</div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="section-head reveal">
+        <h2 data-i18n="exp.title">Expériences</h2>
+        <p class="muted" data-i18n="exp.desc">Un parcours orienté tech + data reliability.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <div class="t-top">
+              <h3 data-i18n="exp.e1.title">DB Administrator — Econocom</h3>
+              <span class="pill" data-i18n="exp.e1.date">Apr 2025 – Jun 2025</span>
+            </div>
+            <ul class="list">
+              <li data-i18n="exp.e1.b1">Encryption Oracle (TDE, AES-256)</li>
+              <li data-i18n="exp.e1.b2">Import/validation via Data Pump</li>
+              <li data-i18n="exp.e1.b3">Tests sécurité, backup & recovery</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <div class="t-top">
+              <h3 data-i18n="exp.e2.title">Call Center Assistant — Kisio</h3>
+              <span class="pill" data-i18n="exp.e2.date">May 2023 – Jul 2023</span>
+            </div>
+            <ul class="list">
+              <li data-i18n="exp.e2.b1">Support utilisateurs transport</li>
+              <li data-i18n="exp.e2.b2">Gestion réservations et planning chauffeurs</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <div class="t-top">
+              <h3 data-i18n="exp.e3.title">IT Maintenance Technician — Econocom</h3>
+              <span class="pill" data-i18n="exp.e3.date">Jun 2022 – Aug 2022</span>
+            </div>
+            <ul id="sah" class="list">
+              <li data-i18n="exp.e3.b1">Préparation & déploiement postes</li>
+              <li data-i18n="exp.e3.b2">Suivi matériel, étiquetage, équipements</li>
+            </ul>
+          </div>
+        </div>
+        <div class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <div class="t-top">
+              <h3 data-i18n="exp.e4.title">Independent Project — E-commerce</h3>
+              <span class="pill" data-i18n="exp.e4.date">Starting in Jun 2025</span>
+            </div>
+            <p class="sah" data-i18n="exp.e4.desc">
+              J’ai créé et développé une petite entreprise e-commerce spécialisée dans la papeterie, des produits liés à la lecture,
+              et des accessoires soigneusement conçus. Je gère l’ensemble du processus : sélection des produits, branding,
+              préparation des commandes, relation client, logistique et organisation des workflows afin d’assurer une expérience fluide et fiable.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section-head reveal">
+        <h2 data-i18n="skills.title">Compétences</h2>
+        <p class="muted" data-i18n="skills.desc">Stack technique + méthodologie.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card reveal">
+          <h3 data-i18n="skills.s1.title">Data</h3>
+          <div class="chips">
+            <span data-i18n="skills.s1.a">Data Cleaning</span>
+            <span data-i18n="skills.s1.b">Data Quality</span>
+            <span data-i18n="skills.s1.c">Validation</span>
+            <span data-i18n="skills.s1.d">EDA</span>
+            <span data-i18n="skills.s1.e">Feature Engineering</span>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <h3 data-i18n="skills.s2.title">Databases</h3>
+          <div class="chips">
+            <span>Oracle</span><span>PostgreSQL</span><span>MySQL</span><span>SQLite</span>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <h3 data-i18n="skills.s3.title">Tools</h3>
+          <div class="chips">
+            <span>Python</span><span>SQL</span><span>KNIME</span><span>Git</span><span>UML</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-split">
+
+  <!-- ON GARDE TON BLOC EXACT -->
+  <div class="contact card reveal">
+    <h3 data-i18n="contactBox.title">Envie d’en discuter ?</h3>
+    <p class="muted" data-i18n="contactBox.desc">Je peux détailler la démarche, les tests et les choix techniques.</p>
+
+    <div class="hero-cta">
+      <a class="btn" href="#contact">
+        <i class="fa-solid fa-envelope"></i> <span data-i18n="contactBox.cta1">Me contacter</span>
+      </a>
+      <a class="btn ghost" href="#projects">
+        <i class="fa-solid fa-arrow-left"></i> <span data-i18n="contactBox.cta2">Retour aux projets</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- NOUVEAU BLOC A COTE : DRAPEAUX SEULEMENT -->
+  <div class="contact card reveal"> 
+    <h3 data-i18n="languages.title">Languages</h3> 
+    <div class="lang-row"> <div class="lang-col"> 
+      <img class="flag-ico" src="assets/img/french.png" alt="French"> 
+      <div class="lang-name" data-i18n="languages.fr.name">French</div> 
+      <div class="lang-level" data-i18n="languages.fr.level">Bilingual</div> 
+    </div> 
+    <div class="lang-col"> 
+      <img class="flag-ico" src="assets/img/arabic.png" alt="Arabic"> 
+      <div class="lang-name" data-i18n="languages.ar.name">Arabic</div> 
+      <div class="lang-level" data-i18n="languages.ar.level">Bilingual</div> 
+    </div> <div class="lang-col"> 
+      <img class="flag-ico" src="assets/img/eng.jpg" alt="English"> 
+      <div class="lang-name" data-i18n="languages.en.name">English</div> 
+      <div class="lang-level" data-i18n="languages.en.level">B1 / B2</div> 
+      <div class="lang-bar"> <span class="lang-bar-fill" style="width:70%"></span> 
+      </div> 
+    </div> 
+  </div>
+</div>
+    <!-- Si tu veux une mini info au survol seulement : le title suffit (pas de texte visible) -->
+
+<p class="tiny muted" style="padding-top:14px;">© <span id="year"></span> Arwa Mohamed — <span data-i18n="footer">Built with love & data </span></p>
+
+</section>
+  </main>
+
+  <!-- IMPORTANT: ce fichier doit exister et être le bon -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

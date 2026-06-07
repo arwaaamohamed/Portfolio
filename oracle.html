@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title data-i18n="oracle.page.title">Oracle Database Security (TDE) — Arwa Mohamed</title>
+  <meta name="description" data-i18n="oracle.page.desc" content="Case study — Oracle 19c, TDE (AES-256), Data Pump, backup/restore tests (POC)." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/case-study1.css" />
+</head>
+
+<body data-page="oracle">
+  <div class="bg">
+    <div class="stars" aria-hidden="true"></div>
+    <div class="glow" aria-hidden="true"></div>
+  </div>
+
+  <header class="nav">
+    <a class="brand" href="index.html#projects" aria-label="Back to portfolio">
+      <span class="brand-dot"></span>
+      <span class="brand-text">Arwa Mohamed</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html#projects" data-i18n="oracle.nav.back">← Retour</a>
+      <a href="#contact" class="btn small" data-i18n="oracle.nav.contact">Contact</a>
+    </nav>
+
+    <div class="lang-switch" aria-label="Language switcher">
+      <button id="langBtn" class="lang-btn" type="button" aria-label="Switch language">
+        <span class="lang-flag" id="langFlag" aria-hidden="true">🇫🇷</span>
+        <span class="lang-code" id="langCode">FR</span>
+      </button>
+    </div>
+
+    <div class="theme-switch" aria-label="Theme switcher">
+      <button id="themeBtn" class="theme-btn" type="button" aria-label="Switch theme">
+        <span class="theme-ico" id="themeIco" aria-hidden="true">🌙</span>
+        <span class="theme-code" id="themeCode">DARK</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="case">
+    <section class="case-hero reveal">
+      <div class="case-hero-media">
+        <img src="assets/img/oraclee.png" alt="Oracle case study cover" />
+        <div class="case-hero-overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="case-hero-content">
+        <div class="chip">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span data-i18n="oracle.hero.chip">Oracle 19c • TDE • Data Security • POC</span>
+        </div>
+
+        <h1 data-i18n="oracle.hero.title">
+          Oracle Database Security<br />
+          <span class="gradient">Transparent Data Encryption (AES-256)</span>
+        </h1>
+
+        <p class="subtitle" data-i18n="oracle.hero.subtitle">
+          Projet réalisé lors de mon stage chez Econocom (équipe Oracle DBA).
+          Mise en place d’un POC de chiffrement au repos (TDE), import via Data Pump,
+          et conception d’une stratégie de sauvegarde/restauration validée par des tests de résilience.
+        </p>
+
+        <div class="case-meta">
+          <div class="badge">
+            <i class="fa-solid fa-building"></i>
+            <span data-i18n="oracle.meta.company">Econocom (Internship)</span>
+          </div>
+          <div class="badge">
+            <i class="fa-solid fa-user-shield"></i>
+            <span data-i18n="oracle.meta.context">AEP • POC / simulation</span>
+          </div>
+          <div class="badge">
+            <i class="fa-solid fa-clock"></i>
+            <span data-i18n="oracle.meta.period">Apr–Jun 2025</span>
+          </div>
+
+          <div class="case-cta">
+            <a class="btn ghost" href="assets/docs/Rapport_de_stage_Arwa.pdf" target="_blank" rel="noreferrer">
+              <i class="fa-solid fa-file-pdf"></i> <span data-i18n="oracle.cta.pdf">PDF (rapport)</span>
+            </a>
+          </div>
+        </div>
+
+        <p class="tiny muted" data-i18n="oracle.hero.note">
+          Note : environnement POC, aucune donnée sensible n’a été consultée.
+        </p>
+      </div>
+    </section>
+
+    <section id="content" class="section">
+      <div class="section-head reveal">
+        <h2 data-i18n="oracle.overview.title">Overview</h2>
+        <p class="muted" data-i18n="oracle.overview.desc">
+          Objectif : chiffrer les données au repos avec TDE, sécuriser le keystore, valider la solution par des tests, et définir une stratégie de sauvegarde/restauration compatible.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card reveal">
+          <h3 data-i18n="oracle.context.title">Contexte</h3>
+          <ul class="list">
+            <li><i class="fa-solid fa-database"></i> <span data-i18n="oracle.context.li1">Oracle Database 19c, importation d’une base existante via Data Pump</span></li>
+            <li><i class="fa-solid fa-lock"></i> <span data-i18n="oracle.context.li2">Choix de TDE (Oracle Advanced Security) pour le chiffrement au repos</span></li>
+            <li><i class="fa-solid fa-file-shield"></i> <span data-i18n="oracle.context.li3">Contrainte : schéma volumineux → chiffrement par tablespace privilégié</span></li>
+          </ul>
+        </div>
+
+        <div class="card reveal">
+          <h3 data-i18n="oracle.role.title">Mon rôle</h3>
+          <div class="chips">
+            <span data-i18n="oracle.role.c1">Oracle DBA (POC)</span>
+            <span data-i18n="oracle.role.c2">Security / Hardening</span>
+            <span data-i18n="oracle.role.c3">Backup & Restore</span>
+            <span data-i18n="oracle.role.c4">Technical documentation</span>
+          </div>
+          <div class="quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p data-i18n="oracle.role.quote">Secure data starts with secure storage (and a safe keystore).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head reveal">
+        <h2 data-i18n="oracle.steps.title">Approche</h2>
+        <p class="muted" data-i18n="oracle.steps.desc">
+          Une démarche en 4 étapes : import, chiffrement TDE, tests, puis plan de maintenance.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <div class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <div class="t-top">
+              <h3 data-i18n="oracle.steps.s1.title">1) Importation & préparation</h3>
+              <span class="pill" data-i18n="oracle.steps.s1.pill">Data Pump</span>
+            </div>
+            <ul class="list">
+              <li><i class="fa-solid fa-terminal"></i> <span data-i18n="oracle.steps.s1.li1">Restauration / importation de schémas via expdp/impdp</span></li>
+              <li><i class="fa-solid fa-hard-drive"></i> <span data-i18n="oracle.steps.s1.li2">Gestion des contraintes d’espace disque (VM) et relance de l’import</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <div class="t-top">
+              <h3 data-i18n="oracle.steps.s2.title">2) Chiffrement TDE (AES-256)</h3>
+              <span class="pill" data-i18n="oracle.steps.s2.pill">Tablespace encryption</span>
+            </div>
+            <ul class="list">
+              <li><i class="fa-solid fa-key"></i> <span data-i18n="oracle.steps.s2.li1">Création / gestion du wallet (keystore) et de la clé maître</span></li>
+              <li><i class="fa-solid fa-lock"></i> <span data-i18n="oracle.steps.s2.li2">Chiffrement par tablespace (plus adapté qu’un chiffrement par colonne sur un schéma volumineux)</span></li>
+              <li><i class="fa-solid fa-shield"></i> <span data-i18n="oracle.steps.s2.li3">Algorithme AES-256 pour assurer la confidentialité des données au repos</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <div class="t-top">
+              <h3 data-i18n="oracle.steps.s3.title">3) Tests de résilience</h3>
+              <span class="pill" data-i18n="oracle.steps.s3.pill">ORA-28365</span>
+            </div>
+            <ul class="list">
+              <li><i class="fa-solid fa-circle-xmark"></i> <span data-i18n="oracle.steps.s3.li1">Simulation d’un wallet fermé → accès impossible (ORA-28365)</span></li>
+              <li><i class="fa-solid fa-rotate"></i> <span data-i18n="oracle.steps.s3.li2">Perte / restauration du wallet depuis une sauvegarde → données récupérées</span></li>
+              <li><i class="fa-solid fa-user-lock"></i> <span data-i18n="oracle.steps.s3.li3">Vérification des conditions d’accès selon les privilèges et l’état d’ouverture du keystore</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <div class="t-top">
+              <h3 data-i18n="oracle.steps.s4.title">4) Plan de maintenance</h3>
+              <span class="pill" data-i18n="oracle.steps.s4.pill">Backup / Restore</span>
+            </div>
+            <ul class="list">
+              <li><i class="fa-solid fa-box-archive"></i> <span data-i18n="oracle.steps.s4.li1">Sauvegarde logique via Data Pump</span></li>
+              <li><i class="fa-solid fa-vault"></i> <span data-i18n="oracle.steps.s4.li2">Sauvegarde indispensable du wallet / keystore (sinon les données deviennent indéchiffrables)</span></li>
+              <li><i class="fa-solid fa-file-lines"></i> <span data-i18n="oracle.steps.s4.li3">Documentation technique réutilisable pour l’équipe</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head reveal">
+        <h2 data-i18n="oracle.stack.title">Stack</h2>
+        <p class="muted" data-i18n="oracle.stack.desc">Technologies et outils utilisés.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card reveal">
+          <h3 data-i18n="oracle.stack.db">Database</h3>
+          <div class="chips">
+            <span>Oracle 19c</span><span>SQL*Plus</span><span>SQL Developer</span>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <h3 data-i18n="oracle.stack.security">Security</h3>
+          <div class="chips">
+            <span>TDE</span><span>AES-256</span><span>Wallet / Keystore</span>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <h3 data-i18n="oracle.stack.ops">Ops</h3>
+          <div class="chips">
+            <span>Data Pump</span><span>Backup/Restore</span><span>VM / Linux</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="contact card reveal">
+        <h3 data-i18n="oracle.end.title">Envie d’en discuter ?</h3>
+        <p class="muted" data-i18n="oracle.end.desc">Je peux détailler la démarche, les tests et les choix techniques.</p>
+        <div class="hero-cta">
+          <a class="btn" href="mailto:etu.arwa@gmail.com">
+            <i class="fa-solid fa-envelope"></i> <span data-i18n="oracle.end.mail">Me contacter</span>
+          </a>
+          <a class="btn ghost" href="index.html#projects">
+            <i class="fa-solid fa-arrow-left"></i> <span data-i18n="oracle.end.back">Retour aux projets</span>
+          </a>
+        </div>
+      </div>
+      <p class="tiny muted" style="padding: 0 18px 40px;">© <span id="year"></span> Arwa Mohamed — <span data-i18n="oracle.footer.line">Built with love & data ✨</span></p>
+    </section>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
